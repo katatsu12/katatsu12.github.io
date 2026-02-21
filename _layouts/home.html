@@ -1,0 +1,124 @@
+---
+layout: default
+---
+<div class="main">
+  <section class="banner">
+    <img src="{{ '/assets/images/landing/banner.png' | relative_url }}" alt="Welcome to Tlaquepaque">
+    <h1>Welcome to Tlaquepaque</h1>
+    <a href="/hours" class="btn">Plan your visit</a>
+  </section>
+
+  <nav aria-label="Explore the village">
+    <dl>
+      {% for cat in site.data.categories %}
+        <a href="{{ cat.path }}" class="category {{ cat.key }}">
+          <img src="{{ '/assets/images/' | append: cat.image | relative_url }}" alt="{{ cat.title }}">
+          <dt>{{ cat.title }}</dt>
+          <dd>{{ cat.subtitle }}</dd>
+        </a>
+      {% endfor %}
+    </dl>
+  </nav>
+
+  <section>
+    <article>
+      <span>
+        {% include icons/window_dark_blue.svg %}
+        Village Map
+      </span>
+      <h2>Discover the art, shops, galleries, and beauty of Tlaquepaque North and South.</h2>
+      <h5>Our interactive village map provides easy navigation to all 50+ shops, galleries, and restaurants, helping you discover every corner of Tlaquepaque North and South during your visit.</h5>
+      {% include map.html %}
+    </article>
+
+    <article>
+      <span>
+        {% include icons/window_dark_blue.svg %}
+        Calendar
+      </span>
+      <h2>See what's happening in the village this month.</h2>
+      <h5>From lively musical performances to celebrated annual events, Tlaquepaque Arts &amp; Shopping Village is a destination for art, culture, and community year-round.</h5>
+      <div class="landing-calendar">
+        {% assign upcoming_events = site.events | sort: "starts_at" %}
+        {% assign now = 'now' | date: '%s' %}
+        {% assign landing_events = "" | split: "" %}
+        {% for event in upcoming_events %}
+          {% if event.starts_at %}
+            {% assign event_time = event.starts_at | date: '%s' %}
+            {% if event_time >= now and landing_events.size < 3 %}
+              {% assign landing_events = landing_events | push: event %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if landing_events.size == 0 %}
+          {% assign landing_events = upcoming_events | reverse | slice: 0, 3 %}
+        {% endif %}
+
+        {% if landing_events.size > 0 %}
+          <div class="landing-calendar-card">
+            <figure>
+              {% if landing_events[0].image %}
+                <img src="{{ landing_events[0].image }}" alt="{{ landing_events[0].title }}">
+              {% else %}
+                <img src="{{ '/assets/images/placeholder.webp' | relative_url }}" alt="{{ landing_events[0].title }}">
+              {% endif %}
+            </figure>
+            <section>
+              {% if landing_events[0].starts_at %}
+                <h5>{{ landing_events[0].starts_at | date: "%B %Y" }}</h5>
+              {% endif %}
+              <ul>
+                {% for event in landing_events %}
+                <li>
+                  <a href="{{ event.url }}">
+                    <time datetime="{{ event.starts_at | date_to_xmlschema }}">
+                      <span>{{ event.starts_at | date: "%a" | upcase }}</span>
+                      <span>{{ event.starts_at | date: "%-d" }}</span>
+                    </time>
+                    <div>
+                      <p>{{ event.starts_at | date: "%B %-d, %Y" }}</p>
+                      <h3>{{ event.title }}</h3>
+                    </div>
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+            </section>
+          </div>
+        {% else %}
+          <p class="landing-calendar-empty">No upcoming events at the moment. Please check back soon.</p>
+        {% endif %}
+      </div>
+    </article>
+
+    <article>
+      <span>
+        {% include icons/window_dark_blue.svg %}
+        What's New
+      </span>
+      <h2>Explore what's happening throughout our village.</h2>
+      <div class="placeholder"></div>
+    </article>
+
+    <article>
+      <span>
+        {% include icons/window_dark_blue.svg %}
+        Our Magazine
+      </span>
+      <h2>The acclaimed village magazine, Discover Tlaquepaque, published biannually.</h2>
+      <div class="placeholder"></div>
+    </article>
+
+    <article>
+      <span class="pink">
+        {% include icons/window_pink.svg %}
+        Weddings &amp; Private Events
+      </span>
+      <h2>Tlaquepaque, one of Sedona's premier event destinations.</h2>
+      <h5>From intimate weddings to corporate gatherings, our enchanting village creates unforgettable moments. Let us help you plan your perfect event.</h5>
+      <div class="placeholder"></div>
+      <a href="/weddings" class="btn btn-pink">Learn More</a>
+    </article>
+  </section>
+</div>

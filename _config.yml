@@ -1,0 +1,61 @@
+title: Tlaquepaque
+description: Arts & Shopping Village
+url: ""
+baseurl: ""
+
+collections:
+  shops:
+    output: true
+    permalink: /shops/:slug/
+  galleries:
+    output: true
+    permalink: /galleries/:slug/
+  foods:
+    output: true
+    permalink: /foods/:slug/
+  events:
+    output: true
+    permalink: /events/:slug/
+  articles:
+    output: true
+    permalink: /articles/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "shops"
+    values:
+      layout: "store"
+      store_type: "shop"
+  - scope:
+      path: ""
+      type: "galleries"
+    values:
+      layout: "store"
+      store_type: "gallery"
+  - scope:
+      path: ""
+      type: "foods"
+    values:
+      layout: "store"
+      store_type: "food"
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - vendor/

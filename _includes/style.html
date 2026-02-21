@@ -1,0 +1,157 @@
+<style>
+  @property --header-height {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 131px;
+  }
+
+  :root {
+    /* Header */
+    --header-height-max: 131px;
+    --header-height-min: 75px;
+    --header-height: var(--header-height-max);
+    --header-status-height: 37px;
+    --header-nav-height: 25px;
+    --header-title-margin-top-max: 2rem;
+    --header-title-margin-top-min: 0.6rem;
+    --header-title-margin-top: var(--header-title-margin-top-max);
+
+    /* Color palette */
+    --navy: #111c4e;
+    --navy-80: color-mix(in srgb, var(--navy) 80%, transparent);
+    --navy-60: color-mix(in srgb, var(--navy) 60%, transparent);
+    --navy-40: color-mix(in srgb, var(--navy) 40%, transparent);
+    --cream: #f7ead7;
+    --cream-80: color-mix(in srgb, var(--cream) 80%, transparent);
+    --cream-60: color-mix(in srgb, var(--cream) 60%, transparent);
+    --cream-40: color-mix(in srgb, var(--cream) 40%, transparent);
+    --red: #e64b38;
+    --red-80: color-mix(in srgb, var(--red) 80%, transparent);
+    --red-60: color-mix(in srgb, var(--red) 60%, transparent);
+    --red-40: color-mix(in srgb, var(--red) 40%, transparent);
+    --orange: #f88d2b;
+    --orange-80: color-mix(in srgb, var(--orange) 80%, transparent);
+    --orange-60: color-mix(in srgb, var(--orange) 60%, transparent);
+    --orange-40: color-mix(in srgb, var(--orange) 40%, transparent);
+    --green: #008066;
+    --green-80: color-mix(in srgb, var(--green) 80%, transparent);
+    --green-60: color-mix(in srgb, var(--green) 60%, transparent);
+    --green-40: color-mix(in srgb, var(--green) 40%, transparent);
+    --blue: #1b638a;
+    --blue-80: color-mix(in srgb, var(--blue) 80%, transparent);
+    --blue-60: color-mix(in srgb, var(--blue) 60%, transparent);
+    --blue-40: color-mix(in srgb, var(--blue) 40%, transparent);
+    --pink: #d41367;
+    --pink-80: color-mix(in srgb, var(--pink) 80%, transparent);
+    --pink-60: color-mix(in srgb, var(--pink) 60%, transparent);
+    --pink-40: color-mix(in srgb, var(--pink) 40%, transparent);
+    --purple: #9926b7;
+    --gray: #D9D9D9;
+
+    /* Utility colors */
+    --primary: var(--navy);
+    --secondary: var(--cream);
+    --bg: var(--secondary);
+    --text: var(--primary);
+    --secondary-text: var(--secondary);
+  }
+
+  @view-transition {
+    navigation: auto;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    @media (max-width: 770px) {
+      :root {
+        --header-title-margin-top-max: 1.2rem;
+        --header-title-margin-top-min: 0.25rem;
+        animation: header-shrink linear both;
+        animation-timeline: scroll();
+        animation-range: 0 240px;
+      }
+    }
+
+    @media (max-width: 770px) and (prefers-reduced-motion: reduce) {
+      :root {
+        animation: none;
+      }
+    }
+  }
+
+  @keyframes header-shrink {
+    from {
+      --header-height: var(--header-height-max);
+      --header-title-margin-top: var(--header-title-margin-top-max);
+    }
+    to {
+      --header-height: var(--header-height-min);
+      --header-title-margin-top: var(--header-title-margin-top-min);
+    }
+  }
+
+  html {
+    background: var(--primary);
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    color: var(--text);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+  }
+
+  main {
+    flex-grow: 1;
+    padding-top: calc(var(--header-height) + var(--header-status-height));
+    background: var(--bg);
+  }
+
+  h1, .h1 { font-size: 3.75rem; }
+  h2, .h2 { font-size: 2.333rem; }
+  h3, .h3 { font-size: 2rem; }
+  h4, .h4 { font-size: 1.667rem; }
+  h5, .h5 { font-size: 1.333rem; }
+  h6, .h6 { font-size: 1rem; }
+
+  svg {
+    max-width: 16px;
+    max-height: 16px;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0px;
+    -webkit-tap-highlight-color: transparent;
+    transition: text-decoration-color 0.3s, text-underline-offset 0.3s;
+  }
+
+  a:hover {
+    text-underline-offset: 2px;
+    text-decoration-color: inherit;
+  }
+
+  footer {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 32px 20px 10rem 23px;
+    line-height: 2rem;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: -20px;
+  }
+</style>

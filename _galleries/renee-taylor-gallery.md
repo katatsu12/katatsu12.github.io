@@ -1,0 +1,11 @@
+---
+slug: renee-taylor-gallery
+title: Renee Taylor Gallery
+subtitle: Contemporary fine art
+suite: B124
+phone: '9282827130'
+website: https://reneetaylorgallery.com
+coordinates: "-111.76346, 34.86300"
+image: "/assets/images/stores/renee-taylor-gallery.webp"
+---
+We offer contemporary fine art in a spacious gallery located in the Patio del Norte at Tlaquepaque. Original artwork, jewelry and many other items await you at the Renee Taylor Gallery.

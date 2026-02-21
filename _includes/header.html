@@ -1,0 +1,71 @@
+<header>
+  <section>
+    <input id="nav-toggle" name="nav-toggle" type="checkbox">
+    <label for="nav-toggle"></label>
+
+    <nav id="mobile">
+      <input id="visit-toggle" name="visit-toggle" type="checkbox">
+      <label class="mobile-submenu-label" for="visit-toggle">
+        {% include icons/window_red.svg %}
+        Visit
+        {% include icons/caret_down.svg %}
+      </label>
+      <ul class="mobile-submenu">
+        {% for item in site.data.navigation.visit_links %}
+        <li>
+          <a href="{{ item.path | relative_url }}">
+            {% include icons/window_red.svg %}
+            {{ item.label }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <a href="/shops/">{% include icons/window_red.svg %} Shop</a>
+      <a href="/galleries/">{% include icons/window_blue.svg %} Gallery</a>
+      <a href="/foods/">{% include icons/window_orange.svg %} Food</a>
+      <a href="/events/">{% include icons/window_purple.svg %} Events</a>
+      <a href="/weddings">{% include icons/window_red.svg %} Weddings</a>
+    </nav>
+
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <h1>Tlaquepaque</h1>
+      <p>Arts &amp; Shopping Village</p>
+    </a>
+
+    <ul class="header-actions">
+      <li>
+        <a class="direction" href="{{ site.data.site.directions_url }}" target="_blank" rel="noopener">
+          {% include icons/location.svg %}
+        </a>
+      </li>
+      <li>
+        <button type="button">
+          {% include icons/search.svg %}
+        </button>
+      </li>
+    </ul>
+
+    <nav id="desktop">
+      <button type="button" id="visit-popover-anchor" popovertarget="visit-popover" popovertargetaction="toggle" aria-haspopup="menu" aria-controls="visit-popover">
+        {% include icons/window_red.svg %}
+        Visit
+        {% include icons/caret_down.svg %}
+      </button>
+      <div id="visit-popover" role="menu" popover="auto">
+        {% for item in site.data.navigation.visit_links %}
+        <a href="{{ item.path | relative_url }}">
+          {% include icons/window_red.svg %}
+          {{ item.label }}
+        </a>
+        {% endfor %}
+      </div>
+      <a href="/shops/">{% include icons/window_red.svg %} Shop</a>
+      <a href="/galleries/">{% include icons/window_blue.svg %} Gallery</a>
+      <a href="/foods/">{% include icons/window_orange.svg %} Food</a>
+      <a href="/events/">{% include icons/window_purple.svg %} Events</a>
+      <a href="/weddings">{% include icons/window_red.svg %} Weddings</a>
+    </nav>
+  </section>
+
+  {% include status-bar.html %}
+</header>

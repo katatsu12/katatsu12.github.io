@@ -1,0 +1,35 @@
+- key: shops
+  path: /shops/
+  image: landing/shop.png
+  title: Shop
+  subtitle: For curious, refined shoppers
+
+- key: galleries
+  path: /galleries/
+  image: landing/gallery.png
+  title: Galleries
+  subtitle: For art lovers and enthusiasts
+
+- key: foods
+  path: /foods/
+  image: landing/food.png
+  title: Food
+  subtitle: For discerning diners
+
+- key: events
+  path: /events/
+  image: landing/events.png
+  title: Events
+  subtitle: For culture seekers
+
+- key: weddings
+  path: /weddings
+  image: landing/wedding.png
+  title: Weddings
+  subtitle: For the bride and groom to be
+
+- key: village_map
+  path: /village_map
+  image: landing/map.png
+  title: Village Map
+  subtitle: ""

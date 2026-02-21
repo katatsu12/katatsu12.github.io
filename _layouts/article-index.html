@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="container">
+  {% include store-header.html
+    type="blog"
+    header_image="placeholder.webp"
+    header_image_alt="Blog Header"
+    label="BLOG"
+    title="Stay inspired with stories from our village."
+    description="Discover the latest news, events, and stories from Tlaquepaque Arts & Shopping Village."
+  %}
+
+  <div class="articles-list">
+    {% assign articles = site.articles | sort: "published_at" | reverse %}
+    {% for article in articles %}
+      <div class="article-card">
+        <div class="card-image">
+          {% if article.thumbnail %}
+            <img src="{{ article.thumbnail }}" alt="{{ article.title }}">
+          {% else %}
+            <img src="{{ '/assets/images/placeholder.webp' | relative_url }}" alt="{{ article.title }}">
+          {% endif %}
+        </div>
+        <div class="card-content">
+          <h3>{{ article.title }}</h3>
+          {% if article.author %}
+            <div class="card-author">{{ article.author }}</div>
+          {% endif %}
+          {% if article.published_at %}
+            <div class="card-date">{{ article.published_at | date: "%B %-d, %Y" }}</div>
+          {% endif %}
+          <a href="{{ article.url }}" class="btn btn-primary">READ MORE</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

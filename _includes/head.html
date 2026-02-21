@@ -1,0 +1,25 @@
+<head>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.data.site.app_name }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="{{ site.data.site.app_name }}">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#f7ead7">
+  <meta name="color-scheme" content="dark">
+
+  {% include style.html %}
+
+  {% seo %}
+
+  <link rel="icon" href="{{ '/icon.png' | relative_url }}" type="image/png">
+  <link rel="icon" href="{{ '/icon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/icon.png' | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/application.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/stores.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/store_hours.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/events.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/landing.css' | relative_url }}">
+</head>

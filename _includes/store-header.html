@@ -1,0 +1,26 @@
+{% comment %}
+  Store listing header. Pass type, icon, label, title, description, header_image, header_image_alt.
+{% endcomment %}
+<div class="stores-header">
+  <div class="header-image">
+    <img src="{{ '/assets/images/' | append: include.header_image | relative_url }}" alt="{{ include.header_image_alt }}">
+  </div>
+  <div class="header-icon icon-{{ include.type }}">
+    {% if include.type == "shop" %}
+      {% include icons/shops_icon.svg %}
+    {% elsif include.type == "food" %}
+      {% include icons/foods_icon.svg %}
+    {% elsif include.type == "gallery" %}
+      {% include icons/galleries_icon.svg %}
+    {% elsif include.type == "event" %}
+      {% include icons/window_purple.svg %}
+    {% elsif include.type == "blog" %}
+      {% include icons/window_purple.svg %}
+    {% endif %}
+    {{ include.label }}
+  </div>
+  <div class="header-content">
+    <h2>{{ include.title }}</h2>
+    <p>{{ include.description }}</p>
+  </div>
+</div>

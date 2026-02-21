@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="container">
+  {% include store-header.html
+    type=page.store_type
+    header_image=page.header_image
+    header_image_alt=page.header_image_alt
+    label=page.store_label
+    title=page.store_title
+    description=page.store_description
+  %}
+
+  <div class="stores-list">
+    {% assign stores = site[page.collection_name] %}
+    {% for store in stores %}
+      {% include store-card.html store=store type=page.store_type %}
+    {% endfor %}
+  </div>
+</div>
