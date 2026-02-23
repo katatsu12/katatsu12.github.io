@@ -1,5 +1,6 @@
 ---
 slug: vue-gallery
+date: 2026-02-22
 title: Vue Gallery
 subtitle: Contemporary artwork and sculpture garden
 suite: E101

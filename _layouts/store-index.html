@@ -12,7 +12,7 @@ layout: default
   %}
 
   <div class="stores-list">
-    {% assign stores = site[page.collection_name] %}
+    {% assign stores = site[page.collection_name] | sort: "date" | reverse %}
     {% for store in stores %}
       {% include store-card.html store=store type=page.store_type %}
     {% endfor %}

@@ -1,5 +1,6 @@
 ---
 slug: honshin-fine-art-gallery-of-wholeness
+date: 2026-02-22
 title: Honshin Fine Art Gallery of Wholeness
 subtitle: Spiritually inspired paintings, sculpture and jewelry
 suite: C205

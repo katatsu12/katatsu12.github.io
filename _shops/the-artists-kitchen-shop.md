@@ -1,5 +1,6 @@
 ---
 slug: the-artists-kitchen-shop
+date: 2026-02-23
 title: The Artist's Kitchen Shop
 subtitle: Creative cookware, elegant entertaining, and gourmet gifts
 suite: C11

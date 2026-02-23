@@ -1,5 +1,6 @@
 ---
 slug: dulce-ice-cream-churros-candies
+date: 2026-02-22
 title: 'Dulce: Ice Cream, Churros, & Candies'
 subtitle: Snacks, refreshing drinks, treats and gifts
 suite: F104

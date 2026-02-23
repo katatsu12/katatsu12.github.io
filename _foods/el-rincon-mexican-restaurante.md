@@ -1,5 +1,6 @@
 ---
 slug: el-rincon-mexican-restaurante
+date: 2026-02-22
 title: El Rincon Mexican Restaurante
 subtitle: Arizona Style Mexican Cuisine, World Famous Margaritas
 suite: A112

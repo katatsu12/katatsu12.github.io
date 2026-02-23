@@ -1,12 +1,12 @@
 ---
 slug: vino-zona
+date: 2026-02-22
 title: Vino Zona
 subtitle: Arizona wine tasting room
 suite: A207
 phone: '9282822650'
 website: https://www.vinozona.love
 coordinates: "-111.76263, 34.86353"
-image: "/assets/images/stores/vino-zona.webp"
 store_hours:
   monday: 11am - 7pm
   tuesday: 11am - 7pm

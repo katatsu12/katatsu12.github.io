@@ -1,5 +1,6 @@
 ---
 slug: eclectic-image-gallery
+date: 2026-02-22
 title: Eclectic Image Gallery
 subtitle: Fine art photography
 suite: A109

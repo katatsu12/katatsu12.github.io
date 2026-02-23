@@ -1,5 +1,6 @@
 ---
 slug: secret-garden-cafe
+date: 2026-02-22
 title: Secret Garden Cafe
 subtitle: Gourmet salads, sandwiches, pastries & premium wines
 suite: F101

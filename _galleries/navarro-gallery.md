@@ -1,5 +1,6 @@
 ---
 slug: navarro-gallery
+date: 2026-02-22
 title: Navarro Gallery
 subtitle: Western art, wildlife and landscapes
 suite: D103

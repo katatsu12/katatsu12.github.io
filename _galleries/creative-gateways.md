@@ -1,5 +1,6 @@
 ---
 slug: creative-gateways
+date: 2026-02-22
 title: Creative Gateways
 subtitle: Art glass, wall art, metal sculpture and fine jewelry
 suite: B125

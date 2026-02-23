@@ -1,5 +1,6 @@
 ---
 slug: rowe-gallery
+date: 2026-02-22
 title: Rowe Gallery
 subtitle: Traditional and contemporary southwestern art
 suite: A102-3

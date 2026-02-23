@@ -1,5 +1,6 @@
 ---
 slug: carr-dartistes
+date: 2026-02-22
 title: Carré d'Artistes
 subtitle: International contemporary art gallery
 suite: B121

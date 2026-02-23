@@ -1,5 +1,6 @@
 ---
 slug: mountain-trails-gallery
+date: 2026-02-22
 title: Mountain Trails Gallery
 subtitle: Fine American Western art
 suite: A201

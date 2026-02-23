@@ -1,5 +1,6 @@
 ---
 slug: cake-couture
+date: 2026-02-22
 title: Cake Couture
 subtitle: Fine desserts and Coffee
 suite: A114

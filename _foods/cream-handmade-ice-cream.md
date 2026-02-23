@@ -1,5 +1,6 @@
 ---
 slug: cream-handmade-ice-cream
+date: 2026-02-22
 title: CREAM Handmade Ice Cream
 subtitle: Ice Cream, shakes, artisan waffle cones, sundaes and splits
 suite: A11 North

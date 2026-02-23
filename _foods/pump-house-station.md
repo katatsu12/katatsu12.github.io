@@ -1,5 +1,6 @@
 ---
 slug: pump-house-station
+date: 2026-02-22
 title: Pump House Station
 subtitle: Urban Eatery and Market, farm-to-table dining
 suite: D10 North

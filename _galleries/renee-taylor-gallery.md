@@ -1,5 +1,6 @@
 ---
 slug: renee-taylor-gallery
+date: 2026-02-22
 title: Renee Taylor Gallery
 subtitle: Contemporary fine art
 suite: B124

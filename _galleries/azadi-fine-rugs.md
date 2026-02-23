@@ -1,5 +1,6 @@
 ---
 slug: azadi-fine-rugs
+date: 2026-02-22
 title: Azadi Fine Rugs
 subtitle: Exquisite antique, contemporary and custom rugs
 suite: B219

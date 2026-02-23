@@ -1,5 +1,6 @@
 ---
 slug: oak-creek-brewery-grill
+date: 2026-02-22
 title: Oak Creek Brewery & Grill
 subtitle: American grill, premium beers brewed on site
 suite: D201

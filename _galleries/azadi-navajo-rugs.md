@@ -1,5 +1,6 @@
 ---
 slug: azadi-navajo-rugs
+date: 2026-02-22
 title: Azadi Navajo Rugs
 subtitle: Traditional Navajo weavings
 suite: B123
