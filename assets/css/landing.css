@@ -243,6 +243,14 @@
 					margin: 2rem 0;
 				}
 
+				&:has(+ .wedding)::after {
+					height: 0;
+					border-top: 1px solid var(--navy);
+					border-bottom: 3px solid var(--navy);
+					padding-top: 3px;
+					background: transparent;
+				}
+
 				&:last-of-type {
 					margin-bottom: 2rem;
 
@@ -255,28 +263,87 @@
 					display: flex;
 					align-items: center;
 					gap: 1rem;
-					font-size: 1.5rem;
-					font-weight: 500;
-					font-style: bold;
+					font-family: "Montserrat", sans-serif;
+					font-size: 40px;
+					font-weight: 600;
+					letter-spacing: 0.05em;
 					text-transform: uppercase;
 					margin: 1rem 0;
 
-					&.pink {
-						color: var(--pink-80);
+					svg {
+						width: 40px;
+						height: 40px;
 					}
 				}
 
 				h2 {
+					font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+					font-weight: 500;
+					font-size: 60px;
+					color: #111C4E;
 					text-align: left;
+				}
+
+				&.wedding {
+					span {
+						color: #F291A6;
+					}
+
+					div:first-of-type {
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-template-rows: 490fr 333fr;
+						gap: 10px;
+						width: 100%;
+						height: 833px;
+
+						div {
+							background: var(--gray);
+
+							&:first-child {
+								grid-row: 1 / -1;
+							}
+						}
+					}
+
+					div:last-child {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						gap: 2rem;
+						margin-top: 1.5rem;
+
+						h5 {
+							font-size: 25px;
+							font-weight: 400;
+							line-height: 40px;
+							letter-spacing: 0.03em;
+							color: #111C4E;
+						}
+					}
+
+					a {
+						flex-shrink: 0;
+						padding: 14px 40px;
+						font-size: 14px;
+						font-weight: 500;
+						text-decoration: none;
+						text-transform: uppercase;
+						letter-spacing: 0.1em;
+						border-radius: 3px;
+						cursor: pointer;
+						border: none;
+						transition: background-color 0.2s ease;
+						background-color: var(--pink-80);
+						color: var(--cream);
+
+						&:hover {
+							background-color: var(--pink-60);
+						}
+					}
 				}
 			}
 
-			hr {
-				width: 100%;
-				height: 1px;
-				margin: 3rem 0;
-				background: var(--navy);
-			}
 		}
 	}
 
@@ -432,6 +499,16 @@
 							min-height: 200px;
 							height: auto;
 						}
+					}
+				}
+
+				article.wedding div:first-of-type {
+					grid-template-columns: 1fr;
+					grid-template-rows: 1fr;
+					height: 400px;
+
+					div:not(:first-child) {
+						display: none;
 					}
 				}
 			}
