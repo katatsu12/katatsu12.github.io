@@ -1,71 +1,75 @@
 <header>
-  <section>
-    <input id="nav-toggle" name="nav-toggle" type="checkbox">
-    <label for="nav-toggle"></label>
+  <input id="nav-toggle" name="nav-toggle" type="checkbox">
+  <label for="nav-toggle" aria-label="Toggle navigation menu"></label>
 
-    <nav id="mobile">
-      <input id="visit-toggle" name="visit-toggle" type="checkbox">
-      <label class="mobile-submenu-label" for="visit-toggle">
-        {% include icons/windows/red.svg %}
-        Visit
-        {% include icons/caret_down.svg %}
-      </label>
-      <ul class="mobile-submenu">
-        <li><a href="{{ '/' | relative_url }}">{% include icons/windows/red.svg %} Main</a></li>
-        <li><a href="{{ '/hours' | relative_url }}">{% include icons/windows/red.svg %} Hours</a></li>
-        <li><a href="{{ '/locations' | relative_url }}">{% include icons/windows/red.svg %} Locations</a></li>
-        <li><a href="{{ '/parking' | relative_url }}">{% include icons/windows/red.svg %} Parking</a></li>
-        <li><a href="{{ '/village_map' | relative_url }}">{% include icons/windows/red.svg %} Village Map</a></li>
-        <li><a href="{{ '/accessibility' | relative_url }}">{% include icons/windows/red.svg %} Accessibility</a></li>
-        <li><a href="{{ '/family_and_pet' | relative_url }}">{% include icons/windows/red.svg %} Family &amp; Pet</a></li>
-      </ul>
-      <a href="/shops/">{% include icons/windows/red.svg %} Shop</a>
-      <a href="/galleries/">{% include icons/windows/blue.svg %} Gallery</a>
-      <a href="/foods/">{% include icons/windows/orange.svg %} Food</a>
-      <a href="/events/">{% include icons/windows/purple.svg %} Events</a>
-      <a href="/weddings">{% include icons/windows/red.svg %} Weddings</a>
-    </nav>
-
-    <a href="{{ '/' | relative_url }}" class="logo">
-      <h1>Tlaquepaque</h1>
-      <p>Arts &amp; Shopping Village</p>
-    </a>
-
-    <ul class="header-actions">
-      <li>
-        <a class="direction" href="{{ site.data.site.directions_url }}" target="_blank" rel="noopener">
-          {% include icons/location.svg %}
-        </a>
-      </li>
-      <li>
-        <button type="button">
-          {% include icons/search.svg %}
-        </button>
-      </li>
+  <nav id="mobile">
+    <input id="visit-toggle" name="visit-toggle" type="checkbox">
+    <label class="mobile-submenu-label" for="visit-toggle" aria-label="Visit submenu">
+      {% include icons/windows/red.svg %}
+      Visit
+      {% include icons/caret_down.svg %}
+    </label>
+    <ul class="mobile-submenu">
+      <li><a href="{{ '/' | relative_url }}">{% include icons/windows/red.svg %} Main</a></li>
+      <li><a href="{{ '/hours' | relative_url }}">{% include icons/windows/red.svg %} Hours</a></li>
+      <li><a href="{{ '/locations' | relative_url }}">{% include icons/windows/red.svg %} Locations</a></li>
+      <li><a href="{{ '/parking' | relative_url }}">{% include icons/windows/red.svg %} Parking</a></li>
+      <li><a href="{{ '/village_map' | relative_url }}">{% include icons/windows/red.svg %} Village Map</a></li>
+      <li><a href="{{ '/accessibility' | relative_url }}">{% include icons/windows/red.svg %} Accessibility</a></li>
+      <li><a href="{{ '/family_and_pet' | relative_url }}">{% include icons/windows/red.svg %} Family &amp; Pet</a></li>
     </ul>
+    <a href="/shops/">{% include icons/windows/red.svg %} Shop</a>
+    <a href="/galleries/">{% include icons/windows/blue.svg %} Gallery</a>
+    <a href="/foods/">{% include icons/windows/orange.svg %} Food</a>
+    <a href="/events/">{% include icons/windows/purple.svg %} Events</a>
+    <a href="/weddings">{% include icons/windows/red.svg %} Weddings</a>
+  </nav>
 
-    <nav id="desktop">
-      <button type="button" id="visit-popover-anchor">
-        {% include icons/windows/red.svg %}
-        Visit
-        {% include icons/caret_down.svg %}
+  <a href="{{ '/' | relative_url }}" class="logo">
+    <img src="{{ '/assets/images/logos/main.webp' | relative_url }}" alt="Tlaquepaque Arts &amp; Shopping Village" width="347" height="72">
+  </a>
+
+  <ul class="header-actions">
+    <li>
+      <a class="direction" href="{{ site.data.site.directions_url }}" target="_blank" rel="noopener" aria-label="Get directions">
+        {% include icons/location.svg %}
+      </a>
+    </li>
+    <li>
+      <button type="button" aria-label="Search">
+        {% include icons/search.svg %}
       </button>
-      <div id="visit-popover" role="menu" popover="auto">
-        <a href="{{ '/' | relative_url }}">{% include icons/windows/red.svg %} Main</a>
-        <a href="{{ '/hours' | relative_url }}">{% include icons/windows/red.svg %} Hours</a>
-        <a href="{{ '/locations' | relative_url }}">{% include icons/windows/red.svg %} Locations</a>
-        <a href="{{ '/parking' | relative_url }}">{% include icons/windows/red.svg %} Parking</a>
-        <a href="{{ '/village_map' | relative_url }}">{% include icons/windows/red.svg %} Village Map</a>
-        <a href="{{ '/accessibility' | relative_url }}">{% include icons/windows/red.svg %} Accessibility</a>
-        <a href="{{ '/family_and_pet' | relative_url }}">{% include icons/windows/red.svg %} Family &amp; Pet</a>
-      </div>
-      <a href="/shops/">{% include icons/windows/red.svg %} Shop</a>
-      <a href="/galleries/">{% include icons/windows/blue.svg %} Gallery</a>
-      <a href="/foods/">{% include icons/windows/orange.svg %} Food</a>
-      <a href="/events/">{% include icons/windows/purple.svg %} Events</a>
-      <a href="/weddings">{% include icons/windows/red.svg %} Weddings</a>
-    </nav>
-  </section>
+    </li>
+  </ul>
 
-  {% include status-bar.html %}
+  <nav id="desktop">
+    <button type="button" id="visit-popover-anchor" aria-haspopup="true" aria-controls="visit-popover">
+      {% include icons/windows/red.svg %}
+      Visit
+      {% include icons/caret_down.svg %}
+    </button>
+    <div id="visit-popover" popover="auto">
+      <a href="{{ '/' | relative_url }}">{% include icons/windows/red.svg %} Main</a>
+      <a href="{{ '/hours' | relative_url }}">{% include icons/windows/red.svg %} Hours</a>
+      <a href="{{ '/locations' | relative_url }}">{% include icons/windows/red.svg %} Locations</a>
+      <a href="{{ '/parking' | relative_url }}">{% include icons/windows/red.svg %} Parking</a>
+      <a href="{{ '/village_map' | relative_url }}">{% include icons/windows/red.svg %} Village Map</a>
+      <a href="{{ '/accessibility' | relative_url }}">{% include icons/windows/red.svg %} Accessibility</a>
+      <a href="{{ '/family_and_pet' | relative_url }}">{% include icons/windows/red.svg %} Family &amp; Pet</a>
+    </div>
+    <a href="/shops/">{% include icons/windows/red.svg %} Shop</a>
+    <a href="/galleries/">{% include icons/windows/blue.svg %} Gallery</a>
+    <a href="/foods/">{% include icons/windows/orange.svg %} Food</a>
+    <a href="/events/">{% include icons/windows/purple.svg %} Events</a>
+    <a href="/weddings">{% include icons/windows/red.svg %} Weddings</a>
+  </nav>
+
+  <aside id="status" aria-label="Store hours and weather">
+    OPEN TODAY: <time datetime="10:00-17:00">&nbsp;10:00 AM - 5:00 PM&nbsp;</time> | &nbsp;
+    <a id="weather" href="{{ site.data.site.weather_url }}" target="_blank" aria-label="Current weather" style="position: relative;">
+      <img src="{{ site.data.site.weather_widget }}" height="15" style="vertical-align: middle; display: inline-block;"
+        alt="Current Weather">
+    </a>
+  </aside>
+
 </header>
