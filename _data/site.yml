@@ -13,7 +13,6 @@ footer:
 
 directions_url: "https://www.google.com/maps/dir/?api=1&destination=Tlaquepaque%2C%20Sedona%2C%20AZ%2086336%2C%20USA&origin=Current%20Location&travelmode=driving"
 
-mapbox_token: ""  # Set via MAPBOX_TOKEN environment variable or add your token here
 mapbox_style: "mapbox://styles/galulex/cmjjuexff009w01qz4awigw0q"
 
 weather_url: "https://weather.com/weather/today/l/USAZ0209%3A1%3AUS"
