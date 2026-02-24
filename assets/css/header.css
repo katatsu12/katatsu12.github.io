@@ -125,6 +125,7 @@ header {
       text-transform: uppercase;
       flex-direction: row;
       height: var(--header-nav-height);
+      padding: 1rem .5rem;
 
       &:hover {
         color: var(--navy);
@@ -136,20 +137,26 @@ header {
     button#visit-popover-anchor {
       all: unset;
       display: flex;
+      gap: 0.35rem;
+      padding: 0 0.5rem;
       align-items: center;
       text-transform: uppercase;
       cursor: pointer;
       anchor-name: --visit-popover-anchor;
       height: var(--header-nav-height);
 
+      svg:last-of-type {
+        transition: transform 500ms ease;
+      }
+
       &:hover {
         color: var(--navy);
         background: var(--cream);
         transition: background-color 180ms ease, color 180ms ease;
-      }
 
-      svg:last-of-type {
-        margin-left: 1rem;
+        svg:last-of-type {
+          transform: rotate(180deg);
+        }
       }
     }
 
@@ -179,7 +186,7 @@ header {
         justify-content: flex-start;
         flex-direction: row;
         width: 100%;
-        padding: 0.45rem 0.75rem;
+        padding: 1.5rem 1rem;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 0.08em;

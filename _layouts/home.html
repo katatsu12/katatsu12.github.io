@@ -3,27 +3,54 @@ layout: default
 ---
 <div class="main">
   <section class="banner">
-    <img src="{{ '/assets/images/landing/banner.png' | relative_url }}" alt="Welcome to Tlaquepaque">
+    <img
+      src="{{ '/assets/images/landing/banner-960.webp' | relative_url }}"
+      srcset="{{ '/assets/images/landing/banner-480.webp' | relative_url }} 480w,
+              {{ '/assets/images/landing/banner-960.webp' | relative_url }} 960w,
+              {{ '/assets/images/landing/banner-1440.webp' | relative_url }} 1440w"
+      sizes="100vw"
+      alt="Welcome to Tlaquepaque">
     <h1>Welcome to Tlaquepaque</h1>
     <a href="/hours" class="btn">Plan your visit</a>
   </section>
 
   <nav aria-label="Explore the village">
-    <dl>
-      {% for cat in site.data.categories %}
-        <a href="{{ cat.path }}" class="category {{ cat.key }}">
-          <img src="{{ '/assets/images/' | append: cat.image | relative_url }}" alt="{{ cat.title }}">
-          <dt>{{ cat.title }}</dt>
-          <dd>{{ cat.subtitle }}</dd>
-        </a>
-      {% endfor %}
-    </dl>
+    <a href="/shops/" class="shops">
+      <img src="{{ '/assets/images/landing/shop.webp' | relative_url }}" alt="Shop" loading="lazy">
+      <strong>Shop</strong>
+      <span>For curious,<br>refined shoppers</span>
+    </a>
+    <a href="/galleries/" class="galleries">
+      <img src="{{ '/assets/images/landing/gallery.webp' | relative_url }}" alt="Galleries" loading="lazy">
+      <strong>Galleries</strong>
+      <span>For art lovers<br> and enthusiasts</span>
+    </a>
+    <a href="/foods/" class="foods">
+      <img src="{{ '/assets/images/landing/food.webp' | relative_url }}" alt="Food" loading="lazy">
+      <strong>Food</strong>
+      <span>For discerning<br> diners</span>
+    </a>
+    <a href="/events/" class="events">
+      <img src="{{ '/assets/images/landing/events.webp' | relative_url }}" alt="Events" loading="lazy">
+      <strong>Events</strong>
+      <span>For culture<br> seekers</span>
+    </a>
+    <a href="/weddings" class="weddings">
+      <img src="{{ '/assets/images/landing/wedding.webp' | relative_url }}" alt="Weddings" loading="lazy">
+      <strong>Weddings</strong>
+      <span>For the bride and<br> groom to be</span>
+    </a>
+    <a href="/village_map" class="village_map">
+      <img src="{{ '/assets/images/landing/map.webp' | relative_url }}" alt="Village Map" loading="lazy">
+      <strong>Village Map</strong>
+      <span></span>
+    </a>
   </nav>
 
   <section>
     <article>
       <span>
-        {% include icons/window_dark_blue.svg %}
+        {% include icons/windows/dark_blue.svg %}
         Village Map
       </span>
       <h2>Discover the art, shops, galleries, and beauty of Tlaquepaque North and South.</h2>
@@ -33,7 +60,7 @@ layout: default
 
     <article>
       <span>
-        {% include icons/window_dark_blue.svg %}
+        {% include icons/windows/dark_blue.svg %}
         Calendar
       </span>
       <h2>See what's happening in the village this month.</h2>
@@ -94,7 +121,7 @@ layout: default
 
     <article>
       <span>
-        {% include icons/window_dark_blue.svg %}
+        {% include icons/windows/dark_blue.svg %}
         What's New
       </span>
       <h2>Explore what's happening throughout our village.</h2>
@@ -103,7 +130,7 @@ layout: default
 
     <article>
       <span>
-        {% include icons/window_dark_blue.svg %}
+        {% include icons/windows/dark_blue.svg %}
         Our Magazine
       </span>
       <h2>The acclaimed village magazine, Discover Tlaquepaque, published biannually.</h2>
@@ -112,7 +139,7 @@ layout: default
 
     <article class="wedding">
       <span>
-        {% include icons/window_pink.svg %}
+        {% include icons/windows/pink.svg %}
         Weddings &amp; Private Events
       </span>
       <h2>Tlaquepaque, one of Sedona's premier event destinations.</h2>

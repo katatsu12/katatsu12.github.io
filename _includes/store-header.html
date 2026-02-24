@@ -7,15 +7,15 @@
   </div>
   <div class="header-icon icon-{{ include.type }}">
     {% if include.type == "shop" %}
-      {% include icons/shops_icon.svg %}
+      {% include icons/windows/red.svg %}
     {% elsif include.type == "food" %}
-      {% include icons/foods_icon.svg %}
+      {% include icons/windows/orange.svg %}
     {% elsif include.type == "gallery" %}
-      {% include icons/galleries_icon.svg %}
+      {% include icons/windows/blue.svg %}
     {% elsif include.type == "event" %}
-      {% include icons/window_purple.svg %}
+      {% include icons/windows/purple.svg %}
     {% elsif include.type == "blog" %}
-      {% include icons/window_purple.svg %}
+      {% include icons/windows/purple.svg %}
     {% endif %}
     {{ include.label }}
   </div>
