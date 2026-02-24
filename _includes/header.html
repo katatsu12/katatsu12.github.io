@@ -11,14 +11,13 @@
         {% include icons/caret_down.svg %}
       </label>
       <ul class="mobile-submenu">
-        {% for item in site.data.navigation.visit_links %}
-        <li>
-          <a href="{{ item.path | relative_url }}">
-            {% include icons/window_red.svg %}
-            {{ item.label }}
-          </a>
-        </li>
-        {% endfor %}
+        <li><a href="{{ '/' | relative_url }}">{% include icons/window_red.svg %} Main</a></li>
+        <li><a href="{{ '/hours' | relative_url }}">{% include icons/window_red.svg %} Hours</a></li>
+        <li><a href="{{ '/locations' | relative_url }}">{% include icons/window_red.svg %} Locations</a></li>
+        <li><a href="{{ '/parking' | relative_url }}">{% include icons/window_red.svg %} Parking</a></li>
+        <li><a href="{{ '/village_map' | relative_url }}">{% include icons/window_red.svg %} Village Map</a></li>
+        <li><a href="{{ '/accessibility' | relative_url }}">{% include icons/window_red.svg %} Accessibility</a></li>
+        <li><a href="{{ '/family_and_pet' | relative_url }}">{% include icons/window_red.svg %} Family &amp; Pet</a></li>
       </ul>
       <a href="/shops/">{% include icons/window_red.svg %} Shop</a>
       <a href="/galleries/">{% include icons/window_blue.svg %} Gallery</a>
@@ -46,18 +45,19 @@
     </ul>
 
     <nav id="desktop">
-      <button type="button" id="visit-popover-anchor" popovertarget="visit-popover" popovertargetaction="toggle" aria-haspopup="menu" aria-controls="visit-popover">
+      <button type="button" id="visit-popover-anchor">
         {% include icons/window_red.svg %}
         Visit
         {% include icons/caret_down.svg %}
       </button>
       <div id="visit-popover" role="menu" popover="auto">
-        {% for item in site.data.navigation.visit_links %}
-        <a href="{{ item.path | relative_url }}">
-          {% include icons/window_red.svg %}
-          {{ item.label }}
-        </a>
-        {% endfor %}
+        <a href="{{ '/' | relative_url }}">{% include icons/window_red.svg %} Main</a>
+        <a href="{{ '/hours' | relative_url }}">{% include icons/window_red.svg %} Hours</a>
+        <a href="{{ '/locations' | relative_url }}">{% include icons/window_red.svg %} Locations</a>
+        <a href="{{ '/parking' | relative_url }}">{% include icons/window_red.svg %} Parking</a>
+        <a href="{{ '/village_map' | relative_url }}">{% include icons/window_red.svg %} Village Map</a>
+        <a href="{{ '/accessibility' | relative_url }}">{% include icons/window_red.svg %} Accessibility</a>
+        <a href="{{ '/family_and_pet' | relative_url }}">{% include icons/window_red.svg %} Family &amp; Pet</a>
       </div>
       <a href="/shops/">{% include icons/window_red.svg %} Shop</a>
       <a href="/galleries/">{% include icons/window_blue.svg %} Gallery</a>
