@@ -4,9 +4,9 @@
 <div class="store-card card-{{ include.type }}">
   <div class="card-image">
     {% if include.store.image %}
-      <img src="{{ include.store.image }}" alt="{{ include.store.title }}">
+      <img src="{{ include.store.image }}" alt="{{ include.store.title }}" width="600" loading="lazy">
     {% else %}
-      <img src="{{ '/assets/images/placeholder.webp' | relative_url }}" alt="{{ include.store.title }}">
+      <img src="{{ '/assets/images/placeholder.webp' | relative_url }}" alt="{{ include.store.title }}" width="600" loading="lazy">
     {% endif %}
   </div>
   <div class="card-content">

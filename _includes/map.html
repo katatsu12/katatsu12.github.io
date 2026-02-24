@@ -11,10 +11,10 @@
     var mapEl = document.getElementById('map');
     var stores = JSON.parse(mapEl.dataset.stores || '[]');
 
-    mapboxgl.accessToken = '{{ site.data.site.mapbox_token }}';
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FsdWxleCIsImEiOiJjamx6ampoZjgyMnYxM3FvZ2ppNjV2M2x5In0.bPgk2WI9NT-DJwnE-OtiLA';
     var map = new mapboxgl.Map({
       container: 'map',
-      style: '{{ site.data.site.mapbox_style }}',
+      style: 'mapbox://styles/galulex/cmjjuexff009w01qz4awigw0q',
       center: [-111.7635298, 34.8623132],
       zoom: 18,
       pitch: 45,
