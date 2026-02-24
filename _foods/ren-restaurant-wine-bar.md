@@ -7,7 +7,6 @@ suite: B118
 phone: '9282829225'
 website: https://renerestaurantsedona.com
 coordinates: "-111.76345, 34.86315"
-image: "/assets/images/stores/ren-restaurant-wine-bar.webp"
 store_hours:
   monday: 12pm - 8:30pm
   tuesday: 12pm - 8:30pm

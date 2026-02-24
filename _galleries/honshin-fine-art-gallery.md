@@ -1,6 +1,6 @@
 ---
 slug: honshin-fine-art-gallery
-date: 2026-02-22
+date: 2026-02-24
 title: Honshin Fine Art Gallery
 subtitle: Local artists gallery
 suite: A117

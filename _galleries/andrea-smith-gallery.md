@@ -1,6 +1,6 @@
 ---
 slug: andrea-smith-gallery
-date: 2026-02-22
+date: 2026-02-24
 title: Andrea Smith Gallery
 subtitle: World peace artist gallery
 suite: D102

@@ -6,6 +6,5 @@ subtitle: Snacks, refreshing drinks, treats and gifts
 suite: F104
 phone: '9283012666'
 coordinates: "-111.76280, 34.86310"
-image: "/assets/images/stores/dulce-ice-cream-churros-candies.webp"
 ---
 A joy-filled destination where guests can savor a snack, sip a refreshing drink, find the perfect gift, discover a new favorite treat or rediscover those that they've always loved.

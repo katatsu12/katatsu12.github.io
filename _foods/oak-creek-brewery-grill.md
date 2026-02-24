@@ -7,7 +7,6 @@ suite: D201
 phone: '9282823300'
 website: https://oakcreekbreweryandgrill.com
 coordinates: "-111.76400, 34.86350"
-image: "/assets/images/stores/oak-creek-brewery-grill.webp"
 store_hours:
   monday: 11:30am - 9pm
   tuesday: 11:30am - 9pm

@@ -7,7 +7,6 @@ suite: F101
 phone: '9282039564'
 website: https://www.sedonasecretgardencafe.com
 coordinates: "-111.76285, 34.86305"
-image: "/assets/images/stores/secret-garden-cafe.webp"
 store_hours:
   monday: 8am - 8pm
   tuesday: 8am - 8pm

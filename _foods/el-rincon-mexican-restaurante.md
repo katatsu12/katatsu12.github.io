@@ -7,7 +7,6 @@ suite: A112
 phone: '9282824648'
 website: https://www.elrinconrestaurant.com
 coordinates: "-111.76270, 34.86330"
-image: "/assets/images/stores/el-rincon-mexican-restaurante.webp"
 store_hours:
   monday: 11am - 8pm
   tuesday: 11am - 8pm

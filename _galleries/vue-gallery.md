@@ -7,6 +7,5 @@ suite: E101
 phone: '9282821575'
 website: https://www.reneetaylorgallery.com
 coordinates: "-111.76235, 34.86250"
-image: "/assets/images/stores/vue-gallery.webp"
 ---
 Vue Gallery is the latest addition to the Renee Taylor family of galleries. Vue Gallery features a beautiful sculpture garden alongside Oak Creek with a spacious indoor exhibition space displaying contemporary artwork from local and international artists. Mediums include bronze, adobe, steel, copper, and canvas artwork in a variety of format sizes. We also exhibit a variety of artistic jewelry in silver, gold, and steel.

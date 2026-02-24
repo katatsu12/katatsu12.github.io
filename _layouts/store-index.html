@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="container">
+<div class="container stores-page">
   {% include store-header.html
     type=page.store_type
     header_image=page.header_image
@@ -11,6 +11,16 @@ layout: default
     description=page.store_description
   %}
 
+  <hr class="stores-divider">
+
+  <div class="store-search">
+    <input type="text" id="store-search-input" placeholder="SEARCH FOR A STORE">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="11" cy="11" r="6" stroke="#222222"/>
+      <path d="M20 20L17 17" stroke="#222222" stroke-linecap="round"/>
+    </svg>
+  </div>
+
   <div class="stores-list">
     {% assign stores = site[page.collection_name] | sort: "date" | reverse %}
     {% for store in stores %}
@@ -18,3 +28,5 @@ layout: default
     {% endfor %}
   </div>
 </div>
+
+<script src="{{ '/assets/js/store-search.js' | relative_url }}"></script>

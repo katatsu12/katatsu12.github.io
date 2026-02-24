@@ -7,7 +7,6 @@ suite: D10 North
 phone: '9288624141'
 website: https://www.pumphousestation.com
 coordinates: "-111.76380, 34.86390"
-image: "/assets/images/stores/pump-house-station.webp"
 store_hours:
   monday: 8am - 2:30pm
   tuesday: 8am - 2:30pm
