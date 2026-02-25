@@ -1,0 +1,11 @@
+<img src="{{ '/assets/images/' | append: include.header_image | relative_url }}" alt="{{ include.title }}">
+
+{% capture icon_path %}icons/windows/{{ include.type }}.svg{% endcapture %}
+<div class="container">
+  <h5 class="icon-{{ include.type }}">
+    {% include {{ icon_path }} %}
+    {{- include.type -}}
+  </h5>
+  <h2>{{ include.title }}</h2>
+  <h6>{{ include.description }}</h6>
+</div>

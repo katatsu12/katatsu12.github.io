@@ -1,82 +1,19 @@
-/* ========== Stores Header ========== */
-
-.stores-header {
-  text-align: center;
-  margin-bottom: 32px;
-  color: var(--navy);
-
-  .header-image {
-    margin: 0 -20px;
-    background-color: var(--placeholder-bg);
-
-    img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 3 / 2;
-    }
-  }
-
-  .header-icon {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 24px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 100%;
-
-    svg {
-      width: 14px;
-      height: 14px;
-    }
-  }
-
-  .icon-shop {
+.shop {
+  h5 {
     color: var(--pink);
-  }
-
-  .icon-food {
-    color: var(--orange);
-  }
-
-  .icon-gallery {
-    color: var(--blue);
-  }
-
-  .icon-events {
-    color: var(--purple);
-  }
-
-  h2 {
-    margin-top: 24px;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 100%;
-    color: var(--navy);
-    font-family: Big Caslon;
-  }
-
-  p {
-    margin-top: 24px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
   }
 }
 
-/* ========== Store Cards ========== */
+.gallery {
+  h5 {
+    color: var(--blue);
+  }
+}
 
-.stores-divider {
-  border: none;
-  border-top: 1px solid #d9d9d9;
-  margin: 32px 0;
+.food {
+  h5 {
+    color: var(--orange);
+  }
 }
 
 .store-search {
@@ -105,22 +42,6 @@
   svg {
     color: var(--navy);
     flex-shrink: 0;
-  }
-}
-
-.stores-page {
-
-}
-
-.stores-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  margin-bottom: 50px;
-
-  @media (min-width: 770px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
   }
 }
 
