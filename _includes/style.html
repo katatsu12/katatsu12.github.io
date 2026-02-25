@@ -1,20 +1,9 @@
 <style>
-  @property --header-height {
-    syntax: "<length>";
-    inherits: true;
-    initial-value: 131px;
-  }
-
   :root {
     /* Header */
-    --header-height-max: 131px;
-    --header-height-min: 75px;
-    --header-height: var(--header-height-max);
+    --header-height: 131px;
     --header-status-height: 37px;
     --header-nav-height: 25px;
-    --header-title-margin-top-max: 2rem;
-    --header-title-margin-top-min: 0.6rem;
-    --header-title-margin-top: var(--header-title-margin-top-max);
 
     /* Color palette */
     --navy: #111c4e;
@@ -61,35 +50,6 @@
     navigation: auto;
   }
 
-  @supports (animation-timeline: scroll()) {
-    @media (max-width: 770px) {
-      :root {
-        --header-title-margin-top-max: 1.2rem;
-        --header-title-margin-top-min: 0.25rem;
-        animation: header-shrink linear both;
-        animation-timeline: scroll();
-        animation-range: 0 240px;
-      }
-    }
-
-    @media (max-width: 770px) and (prefers-reduced-motion: reduce) {
-      :root {
-        animation: none;
-      }
-    }
-  }
-
-  @keyframes header-shrink {
-    from {
-      --header-height: var(--header-height-max);
-      --header-title-margin-top: var(--header-title-margin-top-max);
-    }
-    to {
-      --header-height: var(--header-height-min);
-      --header-title-margin-top: var(--header-title-margin-top-min);
-    }
-  }
-
   html {
     background: var(--primary);
   }
@@ -107,12 +67,14 @@
   body {
     display: flex;
     flex-direction: column;
-    background: var(--bg);
+    background: var(--navy);
+    min-height: 100%;
+    height: auto;
   }
 
   main {
     flex-grow: 1;
-    padding-top: calc(var(--header-height) + var(--header-status-height));
+    padding-top: 0;
     background: var(--bg);
   }
 

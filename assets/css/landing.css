@@ -490,6 +490,8 @@
 	@media (max-width: 900px) {
 		section {
 			&:has(article) {
+				padding: 0 1.5rem;
+
 				.landing-calendar {
 					.landing-calendar-card {
 						grid-template-columns: 1fr;
@@ -503,13 +505,40 @@
 					}
 				}
 
-				article.wedding div:first-of-type {
-					grid-template-columns: 1fr;
-					grid-template-rows: 1fr;
-					height: 400px;
+				article {
+					span {
+						font-size: 24px;
 
-					div:not(:first-child) {
-						display: none;
+						svg {
+							width: 24px;
+							height: 24px;
+						}
+					}
+
+					h2 {
+						font-size: 32px;
+					}
+				}
+
+				article.wedding {
+					div:first-of-type {
+						grid-template-columns: 1fr;
+						grid-template-rows: 1fr;
+						height: 400px;
+
+						div:not(:first-child) {
+							display: none;
+						}
+					}
+
+					div:last-child {
+						flex-direction: column;
+						align-items: flex-start;
+
+						h5 {
+							font-size: 18px;
+							line-height: 28px;
+						}
 					}
 				}
 			}
