@@ -2,11 +2,19 @@
   h5 {
     color: var(--pink);
   }
+
+  .btn-primary {
+    background-color: var(--pink);
+  }
 }
 
 .gallery {
   h5 {
     color: var(--blue);
+  }
+
+  .btn-primary {
+    background-color: var(--blue);
   }
 }
 
@@ -14,14 +22,18 @@
   h5 {
     color: var(--orange);
   }
+
+  .btn-primary {
+    background-color: var(--orange);
+  }
 }
 
 .store-search {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
   border-bottom: 1px solid var(--navy);
-  padding-bottom: 8px;
+  padding-bottom: 0.667rem;
+  margin: 0.75rem 0;
 
   input {
     flex: 1;
@@ -49,91 +61,20 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
 
   &.card-hidden {
     opacity: 0;
     transform: scale(0.95);
+    height: 0;
+    margin: 0;
   }
 
-  .card-image {
+  img {
+    margin: 1.333rem 0;
     background-color: var(--placeholder-bg);
-  }
-
-  .card-image img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-  }
-
-  .card-content {
-    padding-top: 16px;
-
-    h2 {
-      margin-bottom: 8px;
-      font-size: 24px;
-      font-weight: 500;
-      color: var(--navy);
-      font-family: Big Caslon;
-    }
-  }
-
-  .card-subtitle {
-    margin-bottom: 12px;
-    color: var(--navy);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .card-meta {
-    margin-bottom: 16px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--navy);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-
-    .separator {
-      margin-inline: 8px;
-    }
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  &.card-shop .btn-primary {
-    background-color: var(--pink);
-  }
-
-  &.card-gallery .btn-primary {
-    background-color: var(--blue);
-  }
-
-  &.card-food .btn-primary {
-    background-color: var(--orange);
-  }
-}
-
-.store-content {
-  .detail {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    padding: 15px 0;
-
-    h5 {
-      text-transform: uppercase;
-    }
-
-    a {
-      color: inherit;
-    }
-  }
-
-  .store-social {
-    padding: 14px 0;
-    border-radius: 50%;
   }
 }
