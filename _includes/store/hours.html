@@ -1,13 +1,13 @@
 {% comment %}
   Store hours component.
   Pass store hours via include.store_hours, or falls back to site defaults.
-  "Today" highlighting is done client-side in store-hours.js.
+  "Today" highlighting is done client-side in store/hours.js.
 {% endcomment %}
 
 {% if include.store_hours %}
   {% assign hours = include.store_hours %}
 {% else %}
-  {% assign hours = site.data.store_hours_defaults %}
+  {% assign hours = site.data.store.hours_defaults %}
 {% endif %}
 
 <div class="store-hours">

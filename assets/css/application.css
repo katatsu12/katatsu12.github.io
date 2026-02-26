@@ -48,9 +48,6 @@ h6 {
   overflow-wrap: break-word;
 }
 /* 9. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
 h1,
 h2,
 h3,
@@ -97,6 +94,7 @@ h6 {
 
 .container {
   padding: 0 20px;
+  display: grid;
 }
 
 /* Buttons */
@@ -104,7 +102,9 @@ h6 {
 .btn {
   display: inline-block;
   padding: 12px 24px;
-  font-size: 14px;
+  font-size: 1.333rem;
+  letter-spacing: 3%;
+  line-height: 1.833rem;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
@@ -112,6 +112,7 @@ h6 {
   cursor: pointer;
   border: none;
   transition: background-color 0.2s ease;
+  margin: 0.75rem 0;
 }
 
 .btn-primary {
@@ -162,4 +163,47 @@ hr {
 
 .top-section {
   background: #9926B733;
+}
+
+h2 {
+  margin: 0.75rem 0;
+  font-family: Big Caslon;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 4%;
+}
+
+h3 {
+  margin: 0.75rem 0;
+  font-family: Big Caslon;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 4%;
+}
+
+h5 {
+  gap: 0.725rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 5%;
+}
+
+h6 {
+  font-size: 1.333rem;
+  margin: 0.75rem 0;
+  letter-spacing: 3%;
+  line-height: 1.833rem;
+}
+
+p {
+  margin: 0.75rem 0;
+  text-wrap: pretty;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 4%;
 }

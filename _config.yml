@@ -25,19 +25,19 @@ defaults:
       path: ""
       type: "shops"
     values:
-      layout: "store"
+      layout: "store/show"
       store_type: "shop"
   - scope:
       path: ""
       type: "galleries"
     values:
-      layout: "store"
+      layout: "store/show"
       store_type: "gallery"
   - scope:
       path: ""
       type: "foods"
     values:
-      layout: "store"
+      layout: "store/show"
       store_type: "food"
   - scope:
       path: ""
