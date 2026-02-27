@@ -17,9 +17,21 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/application.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/store/index.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/store/hours.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/events.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/landing.css' | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ '/assets/css/events.css' | relative_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ '/assets/css/stores.css' | relative_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ '/assets/css/store/index.css' | relative_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ '/assets/css/store_hours.css' | relative_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ '/assets/css/store/hours.css' | relative_url }}" media="print" onload="this.media='all'">
+
+  <noscript>
+    <link rel="stylesheet" href="{{ '/assets/css/store/index.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/store/hours.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/events.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/stores.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/store_hours.css' | relative_url }}">
+  </noscript>
 </head>

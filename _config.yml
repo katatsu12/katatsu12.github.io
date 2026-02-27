@@ -4,6 +4,8 @@ url: ""
 baseurl: ""
 
 collections:
+  landing:
+    output: false
   shops:
     output: true
     permalink: /shops/:slug/
