@@ -21,6 +21,9 @@ collections:
   articles:
     output: true
     permalink: /articles/:slug/
+  weddings:
+    output: true
+    permalink: /weddings/:slug/
 
 defaults:
   - scope:
@@ -51,6 +54,11 @@ defaults:
       type: "articles"
     values:
       layout: "article"
+  - scope:
+      path: ""
+      type: "weddings"
+    values:
+      layout: "weddings/show"
 
 plugins:
   - jekyll-seo-tag

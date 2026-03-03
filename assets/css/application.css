@@ -83,7 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Container */
 
 .container {
-  padding: 0 20px;
+  /* padding: 0 20px; */
+  padding: 0 3rem;
   display: grid;
 }
 
@@ -1303,6 +1304,8 @@ article {
 
     }
   }
+
+  .container { padding: 0 1.5rem; }
 }
 
 /* AWARDS */
@@ -1421,5 +1424,47 @@ footer {
     height: 5px;
     margin: 1rem 0;
     border-bottom: 0.75px solid var(--cream);
+  }
+}
+
+.weddings {
+  h5 {
+    color: var(--pink-40);
+  }
+
+  .btn-primary {
+    background-color: var(--pink-40);
+    width: 100%;
+  }
+
+  hr {
+    margin: 2rem 0;
+  }
+
+  .header-jump {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .list-container {
+    padding: 0.75rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card {
+    img { margin: 1.5rem 0; }
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #events {
+    h5 { color: var(--navy); }
+    .btn-primary { background-color: var(--navy); }
   }
 }
