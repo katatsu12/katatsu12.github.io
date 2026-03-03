@@ -4,10 +4,10 @@
     {% include {{ filming.icon }} %}
     {{ filming.title | escape }}
   </h5>
-  <h2>{{ filming.heading | escape }}</h2>
+  <h3>{{ filming.heading | escape }}</h3>
   <img src="{{ filming.image | relative_url }}" alt="{{ filming.alt }}" loading="lazy" width="800" height="600">
   <section class="footer">
-    <h4>{{ filming.description }}</h4>
+    <p>{{ filming.description }}</p>
     <a href="{{ filming.link.url }}" class="btn btn-primary">{{ filming.link.text | escape }}</a>
   </section>
 </article>
