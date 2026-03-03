@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
+{% assign banner = site.landing | where: "section", "banner" | first %}
 <section id="landing-banner">
-  {% assign img = page.banner.image %}
+  {% assign img = banner.image %}
   <img src="{{ '/assets/images/' | append: img | append: '-960.webp' | relative_url }}" srcset="{{ '/assets/images/' | append: img | append: '-480.webp' | relative_url }} 480w,
               {{ '/assets/images/' | append: img | append: '-960.webp' | relative_url }} 960w,
               {{ '/assets/images/' | append: img | append: '-1440.webp' | relative_url }} 1440w" sizes="100vw"
-    alt="{{ page.banner.heading }}" width="1440" height="1020" fetchpriority="high">
-  <h1>{{ page.banner.heading }}</h1>
-  <a href="{{ page.banner.button.url }}" class="btn">{{ page.banner.button.text }}</a>
+    alt="{{ banner.heading }}" width="1440" height="1020" fetchpriority="high">
+  <h1>{{ banner.heading }}</h1>
+  <a href="{{ banner.button.url }}" class="btn">{{ banner.button.text }}</a>
 </section>
 
 <nav id="landing-nav" aria-label="{{ page.nav.label }}">
