@@ -1,10 +1,10 @@
 {% assign magazine = site.landing | where: "slug", "magazine" | first %}
 <article id="{{ magazine.slug }}">
-  <h2>
+  <h5>
     {% include {{ magazine.icon }} %}
     {{ magazine.title }}
-  </h2>
-  <h3>{{ magazine.heading }}</h3>
+  </h5>
+  <h2>{{ magazine.heading }}</h2>
   <figure>
     <img src="{{ magazine.image | relative_url }}" alt="{{ magazine.alt }}" loading="lazy" width="900" height="600">
   </figure>
