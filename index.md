@@ -2,13 +2,6 @@
 layout: home
 title: Tlaquepaque
 
-banner:
-  heading: "Welcome to Tlaquepaque"
-  image: landing/banner
-  button:
-    text: "Plan your visit"
-    url: /hours
-
 nav:
   label: "Explore the village"
   shops:
