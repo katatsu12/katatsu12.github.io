@@ -4,6 +4,7 @@
     --header-height: 131px;
     --header-status-height: 37px;
     --header-nav-height: 25px;
+    --layout-max-width: 1440px;
 
     /* Color palette */
     --navy: #111c4e;
@@ -34,7 +35,11 @@
     --pink-80: color-mix(in srgb, var(--pink) 80%, transparent);
     --pink-60: color-mix(in srgb, var(--pink) 60%, transparent);
     --pink-40: color-mix(in srgb, var(--pink) 40%, transparent);
+    --pink-light: #f291a6;
     --purple: #9926b7;
+    --purple-80: color-mix(in srgb, var(--purple) 80%, transparent);
+    --purple-60: color-mix(in srgb, var(--purple) 60%, transparent);
+    --purple-40: color-mix(in srgb, var(--purple) 40%, transparent);
     --gray: #D9D9D9;
     --placeholder-bg: #e8e4df;
 
@@ -67,15 +72,18 @@
   body {
     display: flex;
     flex-direction: column;
-    background: var(--navy);
+    background: var(--cream);
     min-height: 100%;
     height: auto;
+
+    &:has(header input#nav-toggle:checked) {
+      overflow-y: hidden;
+    }
   }
 
   main {
     flex-grow: 1;
-    padding-top: 0;
-    background: var(--bg);
+    overflow-x: hidden;
   }
 
   h1, .h1 { font-size: 3.75rem; }

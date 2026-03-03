@@ -1,10 +1,10 @@
 {% assign calendar = site.landing | where: "slug", "calendar" | first %}
 <article id="{{ calendar.slug }}">
-  <h2>
+  <h5>
     {% include {{ calendar.icon }} %}
     {{ calendar.title }}
-  </h2>
-  <h3>{{ calendar.heading }}</h3>
+  </h5>
+  <h2>{{ calendar.heading }}</h2>
 
   {% assign sorted_events = site.events | sort: "starts_at" %}
   {% assign now = 'now' | date: '%s' %}
@@ -58,7 +58,7 @@
   {% endif %}
 
   <section class="footer">
-    <h4>{{ calendar.description | escape }}</h4>
+    <p>{{ calendar.description | escape }}</p>
     {% if calendar.link %}
       <a href="{{ calendar.link.url }}" class="btn btn-primary">{{ calendar.link.text | escape }}</a>
     {% endif %}
