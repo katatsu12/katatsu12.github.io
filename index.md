@@ -31,7 +31,7 @@ nav:
     image: landing/wedding.webp
   village_map:
     title: Village Map
-    description: "For explorers and wanderers"
+    description: "For explorers and<br>wanderers"
     url: /village_map/
     image: landing/map.webp
 ---

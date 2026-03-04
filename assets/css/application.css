@@ -162,30 +162,42 @@ h1, h2, h3, h4 {
   letter-spacing: 0.04em;
 }
 
-/* h1 {
-  text-align: center;
+h1 {
+  font-size: clamp(45px, 6vw, 90px);
   z-index: 1;
-} */
+}
 
 h2, h3, h4 {
   margin: 0.75rem 0;
 }
 
 h2 {
-  font-size: clamp(28px, 3.5vw, 40px);
+  font-size: clamp(28px, 4.5vw, 60px);
+}
+
+h3 {
+  font-size: clamp(24px, 3vw, 40px);
+}
+
+h4 {
+  font-size: clamp(18px, 3vw, 34px);
+}
+
+h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  margin: 0.75rem 0;
 }
 
 h5 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: clamp(20px, 2.5vw, 32px);
+  letter-spacing: 0.05em;
   gap: 0.725rem;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   margin: 1.5rem 0 0.75rem 0;
-  font-size: clamp(20px, 3.5vw, 40px);
-  line-height: 1;
-  letter-spacing: 0.05em;
 
   svg {
     width: clamp(16px, 2.5vw, 30px);
@@ -194,17 +206,16 @@ h5 {
 }
 
 h6 {
-  font-size: 1.333rem;
-  margin: 0.75rem 0;
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 25px);
   letter-spacing: 0.03em;
-  line-height: 1.375;
 }
 
 p {
   margin: 0.75rem 0;
   text-wrap: pretty;
-  font-weight: 500;
-  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+  font-size: clamp(12px, 1.7vw, 20px);
 }
 
 /* HEADER */
@@ -651,7 +662,7 @@ header {
     text-align: center;
     padding: 0.45rem 1rem;
     height: var(--header-status-height);
-    font-size: 0.95rem;
+    font-size: clamp(12px, 1.7vw, 15px);
     letter-spacing: 0.05em;
     font-weight: 500;
     width: 100%;
@@ -682,13 +693,8 @@ header {
 
   h1 {
     width: 100%;
-    font-weight: 500;
-    font-size: clamp(40px, 12vw, 90px);
-    line-height: 1;
-    letter-spacing: 0.04em;
     text-align: center;
     color: var(--cream);
-    z-index: 1;
   }
 
   a.btn {
@@ -716,7 +722,6 @@ header {
 
   a {
     --category-overlay: var(--navy-80);
-    --category-text: var(--cream);
 
     display: flex;
     justify-content: center;
@@ -757,18 +762,15 @@ header {
     h5, p {
       display: block;
       z-index: 2;
-      color: var(--category-text);
+      color: var(--cream);
       margin: 0;
       width: 100%;
       transition: transform 500ms ease, margin 500ms ease;
     }
 
-    h5 {
-      font-size: clamp(20px, 2.8vw, 32px);
-    }
-
     p {
       font-size: clamp(16px, 2.2vw, 25px);
+      font-weight: 500;
     }
 
     &:hover,
@@ -796,7 +798,6 @@ header {
     &.galleries {
       background: var(--blue);
       --category-overlay: var(--blue-40);
-      --category-text: var(--cream);
     }
 
     &.foods {
@@ -807,7 +808,6 @@ header {
     &.events {
       background: var(--purple);
       --category-overlay: var(--purple-40);
-      --category-text: var(--cream);
     }
 
     &.weddings {
@@ -818,7 +818,6 @@ header {
     &.village-map {
       background: var(--navy);
       --category-overlay: var(--navy-80);
-      --category-text: var(--cream);
     }
   }
 }
@@ -918,10 +917,6 @@ article {
     }
   }
 
-  p {
-    color: var(--navy);
-  }
-
   &#calendar {
     div {
       display: grid;
@@ -931,7 +926,6 @@ article {
       box-shadow: 0 0 0 1px var(--cream-60);
       padding: 2rem;
       gap: 2rem;
-      height: 500px;
 
       figure {
         border-radius: 0.2rem;
@@ -951,7 +945,6 @@ article {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 1.5rem;
         height: 100%;
         padding: 0 0 0 5rem;
 
@@ -977,10 +970,10 @@ article {
           width: 100%;
           list-style: none;
           padding: 0 2rem;
-          margin: 0;
+          margin: 1rem 0 0 0;
           display: flex;
           flex-direction: column;
-          gap: 6rem;
+          gap: 1rem;
           justify-content: space-between;
 
           li+li {
@@ -1039,21 +1032,6 @@ article {
         width: 100%;
         align-items: flex-start;
         padding: 0;
-
-        p {
-          font-size: 1rem;
-          color: var(--navy-60);
-          margin-bottom: 0.3rem;
-          margin-top: 0;
-        }
-
-        h3 {
-          text-align: left;
-          font-size: 1.5rem;
-          font-weight: 500;
-          line-height: 1.2;
-          margin: 0;
-        }
       }
     }
 
@@ -1080,20 +1058,6 @@ article {
         object-fit: cover;
         aspect-ratio: 16 / 10;
       }
-
-      h4 {
-        font-weight: 500;
-        text-align: left;
-        font-size: 2rem;
-        margin-top: 1rem;
-      }
-
-      p {
-        font-size: 1.15rem;
-        color: var(--navy-80);
-        font-weight: 400;
-        margin-top: 0.35rem;
-      }
     }
 
     >div:last-of-type {
@@ -1111,20 +1075,6 @@ article {
           height: auto;
           object-fit: cover;
           aspect-ratio: 4 / 3;
-        }
-
-        h4 {
-          font-weight: 500;
-          text-align: left;
-          font-size: 1.75rem;
-          margin-top: 0.75rem;
-        }
-
-        p {
-          font-size: 1.15rem;
-          color: var(--navy-80);
-          font-weight: 400;
-          margin-top: 0.25rem;
         }
       }
     }
@@ -1162,11 +1112,6 @@ article {
       gap: 1.5rem;
       margin-top: 1rem;
 
-      h4 {
-        flex: 2;
-        font-size: 1.75rem;
-        color: var(--navy);
-      }
 
       a.btn {
         flex: 1;
@@ -1175,9 +1120,7 @@ article {
   }
 
   &#weddings {
-    h5 {
-      color: var(--pink-light);
-    }
+    h5 { color: var(--pink-light); }
 
     .weddings-gallery {
       display: grid;
@@ -1218,16 +1161,7 @@ article {
     margin-top: 1.5rem;
     padding: 0;
 
-    p {
-      flex: 2;
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 40px;
-      letter-spacing: 0.03em;
-    }
-
-    a,
-    div[role="group"] {
+    a, div[role="group"] {
       flex-shrink: 0;
       display: flex;
       flex-direction: column;
@@ -1247,10 +1181,6 @@ article {
   }
 
   .content-wrapper>article {
-    h3 {
-      font-size: 32px;
-    }
-
     .footer {
       flex-direction: column;
       align-items: stretch;
@@ -1262,32 +1192,18 @@ article {
     }
 
     &#calendar {
-      figure {
-        min-height: 220px;
-        height: auto !important;
-        width: 100%;
-      }
-
       .calendar-events {
-        height: auto !important;
-        padding: 0 !important;
-        gap: 0.75rem !important;
+        padding: 0;
 
         ul {
-          gap: 0.75rem !important;
-          padding: 0 !important;
+          padding: 0;
         }
       }
-
     }
 
     &#whats-new {
       &>div:last-of-type {
         display: none;
-      }
-
-      &>div:first-of-type h4 {
-        font-size: 1.5rem;
       }
     }
 
@@ -1303,10 +1219,6 @@ article {
         flex-direction: column;
         align-items: stretch;
 
-        h4 {
-          font-size: 1.35rem;
-        }
-
         .btn {
           width: 100%;
         }
@@ -1321,7 +1233,6 @@ article {
           width: 100%;
         }
       }
-
     }
 
     &#weddings {
@@ -1332,7 +1243,6 @@ article {
           display: none;
         }
       }
-
     }
   }
 }
@@ -1457,10 +1367,7 @@ footer {
 }
 
 .weddings {
-  
-  h5 {
-    color: var(--pink-40);
-  }
+  h5 { color: var(--pink-40); }
 
   .btn-primary {
     background-color: var(--pink-40);
