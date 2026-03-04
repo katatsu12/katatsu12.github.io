@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach((card) => {
       const text = card.querySelector("h3")?.textContent.toLowerCase();
 
-      card.classList.toggle("card-hidden", !text?.includes(query));
+      card.classList.toggle("hidden", !text?.includes(query));
     });
   });
 });

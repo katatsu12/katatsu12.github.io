@@ -24,6 +24,7 @@ body {
 img, picture, video, canvas {
   display: block;
   max-width: 100%;
+  width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
@@ -870,6 +871,14 @@ hgroup {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.3s ease;
+
+    &.hidden {
+      opacity: 0;
+      transform: scale(0.95);
+      height: 0;
+      margin: 0;
+    }
   }
 }
 

@@ -1,11 +1,16 @@
-<img src="{{ '/assets/images/' | append: include.header_image | relative_url }}" alt="{{ include.title }}">
-
 {% capture icon_path %}icons/windows/{{ include.type }}.svg{% endcapture %}
-<div class="container">
+<hgroup>
   <h5 class="icon-{{ include.type }}">
     {% include {{ icon_path }} %}
     {{- include.type -}}
   </h5>
   <h2>{{ include.title }}</h2>
   <h6>{{ include.description }}</h6>
-</div>
+  <div class="store-search">
+    <input type="text" id="storeSearchInput" placeholder="SEARCH FOR A STORE">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="11" cy="11" r="6" stroke="#222222"/>
+      <path d="M20 20L17 17" stroke="#222222" stroke-linecap="round"/>
+    </svg>
+  </div>
+</hgroup>
