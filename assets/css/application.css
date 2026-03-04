@@ -105,6 +105,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.75rem 0;
 }
 
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:active {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn:visited {
+  text-decoration: none;
+}
+
 .btn-primary {
   background-color: var(--navy);
   color: var(--cream);
@@ -137,10 +162,10 @@ h1, h2, h3, h4 {
   letter-spacing: 0.04em;
 }
 
-h1 {
+/* h1 {
   text-align: center;
   z-index: 1;
-}
+} */
 
 h2, h3, h4 {
   margin: 0.75rem 0;
