@@ -142,72 +142,101 @@ collections:
 
   - name: "landing"
     label: "Landing Sections"
-    folder: "_landing"
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - { label: "Order", name: "order", widget: "number", value_type: "int" }
-      - { label: "Section", name: "section", widget: "select", options: ["banner", "articles", "footer"] }
-      - { label: "Heading", name: "heading", widget: "string", required: false }
-      - { label: "Title", name: "title", widget: "string", required: false }
-      - { label: "Icon", name: "icon", widget: "string", required: false }
-      - { label: "Description", name: "description", widget: "text", required: false }
-      - { label: "Image", name: "image", widget: "image", required: false }
-      - { label: "Alt Text", name: "alt", widget: "string", required: false }
-      - { label: "Empty Message", name: "empty_message", widget: "string", required: false }
-      - label: "Button"
-        name: "button"
-        widget: "object"
-        required: false
-        collapsed: true
-        fields:
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
-      - label: "Link"
-        name: "link"
-        widget: "object"
-        required: false
-        collapsed: true
-        fields:
-          - { label: "URL", name: "url", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-      - label: "Links"
-        name: "links"
-        widget: "list"
-        required: false
-        fields:
-          - { label: "URL", name: "url", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-      - label: "Featured"
-        name: "featured"
-        widget: "object"
-        required: false
-        collapsed: true
-        fields:
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-      - label: "Items"
-        name: "items"
-        widget: "list"
-        required: false
-        fields:
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string" }
+    files:
+      - name: "banner"
+        label: "Banner"
+        file: "_landing/banner.md"
+        fields: &landing_fields
+          - { label: "Order", name: "order", widget: "number", value_type: "int" }
+          - { label: "Section", name: "section", widget: "select", options: ["banner", "articles", "footer"] }
+          - { label: "Heading", name: "heading", widget: "string", required: false }
           - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Icon", name: "icon", widget: "string", required: false }
           - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: "Width", name: "width", widget: "number", required: false }
-          - { label: "Height", name: "height", widget: "number", required: false }
-      - label: "Images"
-        name: "images"
-        widget: "list"
-        required: false
-        fields:
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string" }
-          - { label: "Width", name: "width", widget: "number" }
-          - { label: "Height", name: "height", widget: "number" }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Alt Text", name: "alt", widget: "string", required: false }
+          - { label: "Empty Message", name: "empty_message", widget: "string", required: false }
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            required: false
+            collapsed: true
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - label: "Link"
+            name: "link"
+            widget: "object"
+            required: false
+            collapsed: true
+            fields:
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+          - label: "Featured"
+            name: "featured"
+            widget: "object"
+            required: false
+            collapsed: true
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt", name: "alt", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt", name: "alt", widget: "string" }
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Width", name: "width", widget: "number", required: false }
+              - { label: "Height", name: "height", widget: "number", required: false }
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt", name: "alt", widget: "string" }
+              - { label: "Width", name: "width", widget: "number" }
+              - { label: "Height", name: "height", widget: "number" }
+      - name: "village_map"
+        label: "Village Map"
+        file: "_landing/village-map.md"
+        fields: *landing_fields
+      - name: "calendar"
+        label: "Calendar"
+        file: "_landing/calendar.md"
+        fields: *landing_fields
+      - name: "whats_new"
+        label: "What's New"
+        file: "_landing/whats-new.md"
+        fields: *landing_fields
+      - name: "magazine"
+        label: "Our Magazine"
+        file: "_landing/magazine.md"
+        fields: *landing_fields
+      - name: "weddings"
+        label: "Weddings & Private Events"
+        file: "_landing/weddings.md"
+        fields: *landing_fields
+      - name: "filming"
+        label: "Filming & Photography Permits"
+        file: "_landing/filming.md"
+        fields: *landing_fields
+      - name: "awards"
+        label: "Awards"
+        file: "_landing/awards.md"
+        fields: *landing_fields
 
   - name: "pages"
     label: "Pages"
