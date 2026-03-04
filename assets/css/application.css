@@ -850,11 +850,13 @@ hgroup {
 
 /* PAGE JUMP NAV */
 .header-jump {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: clamp(1rem, 3.5vw, 1.5rem) 0;
-  font-size: clamp(12px, 2.2vw, 20px);
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: clamp(1rem, 3.5vw, 1.5rem) 0;
+    font-size: clamp(12px, 2.2vw, 20px);
+  }
 }
 
 /* LIST CONTAINER */
@@ -868,11 +870,9 @@ hgroup {
     img { margin: 1.5rem 0; }
     flex: 1 1 500px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  h3, h6 { align-self: flex-start; }
 }
 
 /* ARTICLES */
@@ -1458,6 +1458,7 @@ footer {
 }
 
 .weddings {
+  img { width: 100% }
   h5 {
     color: var(--pink-40);
   }

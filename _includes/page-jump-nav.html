@@ -1,8 +1,10 @@
-<hr>
 <nav class="header-jump">
-  <span>Jump to:</span>
-  {% for link in include.links %}
-    <a href="{{ site.data[include.slugs].jump_to_links[link].id }}">{{ site.data[include.slugs].jump_to_links[link].text }}</a>
-  {% endfor %}
+  <hr>
+  <div>
+    <span class="jump-to">Jump to:</span>
+    {% for link in include.links %}
+      <a href="{{ site.data[include.slugs].jump_to_links[link].id }}">{{ site.data[include.slugs].jump_to_links[link].text }}</a>
+    {% endfor %}
+  </div>
+  <hr>
 </nav>
-<hr>
