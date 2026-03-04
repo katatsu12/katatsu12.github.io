@@ -3,7 +3,7 @@ order: 3
 section: articles
 heading: Explore what's happening throughout our village.
 title: What's New.
-icon: icons/windows/dark_blue.svg
+icon: icons/windows/default.svg
 description: ''
 alt: ''
 empty_message: ''
