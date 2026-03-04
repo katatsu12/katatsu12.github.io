@@ -4,22 +4,18 @@ layout: default
 <div class="weddings">
   <img src="{{ '/assets/images/weddings/banner.webp' | relative_url }}" alt="{{ site.data.weddings.title }}">
   <div class="content-wrapper">
-    <div class="container">
+    <hgroup>
       <h5 class="icon-weddings">
         {% include icons/windows/pink.svg %}
         {{ site.data.weddings.weddings }}
       </h5>
       <h2>{{ site.data.weddings.title }}</h2>
       <h6>{{ site.data.weddings.description }}</h6>
-      <hr>
+    </hgroup>
 
-      <div class="header-jump">
-        <span>Jump to:</span>
-        <a href="#venues" class="jump-link">VENUES</a>
-        <a href="#gallery" class="jump-link">INSPIRATION</a>
-        <a href="#events" class="jump-link">PRIVATE EVENTS</a>
-      </div>
-    </div>
+    {% assign jump_nav_links = "venues,gallery,private_events" | split: "," %}
+    {% assign jump_nav_slugs = "weddings" %}
+    {% include page-jump-nav.html links=jump_nav_links slugs=jump_nav_slugs %}
 
     {% include weddings/venues.html %}
     {% include weddings/gallery.html %}
