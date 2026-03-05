@@ -1394,3 +1394,25 @@ footer {
     }
   }
 }
+
+/* CONNECT WITH US */
+form {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  input {
+    width: 100%;
+    padding: 12px 0;
+    border: 1px solid var(--navy);
+    color: var(--navy);
+    border-radius: 0.25rem;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    &::placeholder { color: var(--navy); }
+  }
+}
