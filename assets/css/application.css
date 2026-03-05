@@ -207,7 +207,7 @@ h5 {
 }
 
 h6 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: clamp(16px, 2vw, 25px);
   letter-spacing: 0.03em;
 }
@@ -866,12 +866,20 @@ hgroup {
   gap: 1rem;
 
   .card {
-    img { margin: 1.5rem 0; }
     flex: 1 1 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: all 0.3s ease allow-discrete; 
+    
+    img {
+      margin: 1.5rem 0;
+      object-fit: cover;
+
+      @media (min-width: 771px) {
+        height: 450px;
+      }
+    }
 
     &.hidden {
       display: none;

@@ -1,6 +1,6 @@
 ---
 slug: bow-wow-sedona
-date: 2026-02-23
+date: 2026-03-08
 title: Bow Wow Sedona
 subtitle: Fashion accessories, health & nutrition for pets
 suite: A14
