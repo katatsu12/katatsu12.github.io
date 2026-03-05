@@ -6,6 +6,6 @@ subtitle: Collectible wearable art and quilts by Arizona artists
 suite: B105
 phone: '8002552306'
 website: https://sedonaquiltgallery.com
-coordinates: "-111.76332, 34.86288"
+coordinates: "-111.7633015, 34.8621634"
 ---
 Arizona premier fiber gallery featuring collectible, Wearable Art and Quilts by Arizona Artists.

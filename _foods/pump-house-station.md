@@ -6,7 +6,7 @@ subtitle: Urban Eatery and Market, farm-to-table dining
 suite: D10 North
 phone: '9288624141'
 website: https://www.pumphousestation.com
-coordinates: "-111.76380, 34.86390"
+coordinates: "-111.7628475, 34.8632335"
 store_hours:
   monday: 8am - 2:30pm
   tuesday: 8am - 2:30pm

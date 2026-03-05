@@ -5,7 +5,7 @@ title: Cucina Sedona
 subtitle: Southwest kitchen, table linens, pottery & gourmet items
 suite: D101
 phone: '9282823905'
-coordinates: "-111.76395, 34.86340"
+coordinates: "-111.7633015, 34.8621634"
 store_hours:
   monday: 9:30am - 6pm
   tuesday: 9:30am - 6pm

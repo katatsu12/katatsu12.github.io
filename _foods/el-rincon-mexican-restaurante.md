@@ -6,7 +6,7 @@ subtitle: Arizona Style Mexican Cuisine, World Famous Margaritas
 suite: A112
 phone: '9282824648'
 website: https://www.elrinconrestaurant.com
-coordinates: "-111.76270, 34.86330"
+coordinates: "-111.762693, 34.861773"
 store_hours:
   monday: 11am - 8pm
   tuesday: 11am - 8pm

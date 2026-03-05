@@ -6,7 +6,7 @@ subtitle: Fine desserts and Coffee
 suite: A114
 phone: '9284269232'
 website: https://www.sedonacakes.com
-coordinates: "-111.76265, 34.86325"
+coordinates: "-111.7627959, 34.8618808"
 store_hours:
   monday: 10am - 6pm
   tuesday: 10am - 6pm
