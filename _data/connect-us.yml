@@ -6,6 +6,6 @@ form_placeholders:
   phone: Phone Number
   email: Email
   event_date: Event Date
-  guests: Number of Guests
+  guests: Numbers of Guests
   budget: Budget for Venue
 submit_button: SUBMIT
