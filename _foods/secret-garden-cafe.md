@@ -6,7 +6,7 @@ subtitle: Gourmet salads, sandwiches, pastries & premium wines
 suite: F101
 phone: '9282039564'
 website: https://www.sedonasecretgardencafe.com
-coordinates: "-111.76285, 34.86305"
+coordinates: "-111.7636632, 34.8627261"
 store_hours:
   monday: 8am - 8pm
   tuesday: 8am - 8pm

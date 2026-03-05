@@ -6,7 +6,7 @@ subtitle: Arizona wine tasting room
 suite: A207
 phone: '9282822650'
 website: https://www.vinozona.love
-coordinates: "-111.76263, 34.86353"
+coordinates: "-111.7635, 34.8622"
 store_hours:
   monday: 11am - 7pm
   tuesday: 11am - 7pm

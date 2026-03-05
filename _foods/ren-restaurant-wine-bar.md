@@ -6,7 +6,7 @@ subtitle: Classical French-Mediterranean cuisine, picturesque patio & intimate b
 suite: B118
 phone: '9282829225'
 website: https://renerestaurantsedona.com
-coordinates: "-111.76345, 34.86315"
+coordinates: "-111.7633544, 34.8620672"
 store_hours:
   monday: 12pm - 8:30pm
   tuesday: 12pm - 8:30pm

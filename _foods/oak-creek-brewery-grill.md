@@ -6,7 +6,7 @@ subtitle: American grill, premium beers brewed on site
 suite: D201
 phone: '9282823300'
 website: https://oakcreekbreweryandgrill.com
-coordinates: "-111.76400, 34.86350"
+coordinates: "-111.7637628, 34.8624947"
 store_hours:
   monday: 11:30am - 9pm
   tuesday: 11:30am - 9pm
