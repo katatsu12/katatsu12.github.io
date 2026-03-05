@@ -1396,7 +1396,7 @@ footer {
 }
 
 /* CONNECT WITH US */
-.connect-us-form {
+form {
   margin-top: 0.75rem;
   display: flex;
   flex-direction: column;
