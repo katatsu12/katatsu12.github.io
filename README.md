@@ -1,42 +1,31 @@
-# sv
+# Den Zubrytskyi — Portfolio
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Personal portfolio landing page. Built with SvelteKit (Svelte 5) and fully prerendered to static HTML via `@sveltejs/adapter-static`.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Development
 
 ```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.16.6 create --template minimal --types jsdoc --install npm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Build & preview
 
 ```sh
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## Deployment
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages. For a project-page repo the workflow sets `BASE_PATH` to `/<repo-name>` automatically; a user-page repo (`<user>.github.io`) is served from the root and needs no base path.
+
+In the repo settings, set **Pages → Source** to **GitHub Actions** before the first deploy.
+
+## Structure
+
+- `src/routes/+page.svelte` — page assembly and meta tags
+- `src/lib/components/` — Hero, Flagship, SelectedWork, Services, Stack, Contact sections
+- `src/lib/data.js` — all page content (projects, services, stack, links)
+- `src/lib/actions/reveal.js` — staggered scroll-reveal action
+- `src/app.css` — theme tokens (accent color, palette) and global styles
