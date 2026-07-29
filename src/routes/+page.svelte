@@ -11,14 +11,14 @@
 	<title>Den Zubrytskyi — Senior Full-Stack Rails Engineer</title>
 	<meta
 		name="description"
-		content="Senior full-stack Rails engineer shipping AI features into production SaaS — from LLM integration to custom ML models — backed by 9 years of end-to-end product work."
+		content="Senior full-stack Rails engineer shipping AI features into production SaaS — from LLM integration to a fine-tuned classifier in production — backed by 9 years of end-to-end product work."
 	/>
 	<meta name="theme-color" content="#0b0f12" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Den Zubrytskyi — Senior Full-Stack Rails Engineer" />
 	<meta
 		property="og:description"
-		content="I ship AI features into production SaaS — from LLM integration to custom ML models — backed by 9 years of end-to-end Rails product work."
+		content="I ship AI features into production SaaS — from LLM integration to a fine-tuned classifier in production — backed by 9 years of end-to-end Rails product work."
 	/>
 </svelte:head>
 

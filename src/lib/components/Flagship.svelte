@@ -18,7 +18,7 @@
 		</div>
 		<p class="summary">
 			AI review analytics for Shopify merchants &mdash; solo-built, end to end. Full lifecycle
-			ownership: scoping, ML model training, OAuth integration, deployment, and App Store review.
+			ownership: scoping, ML model training, deployment, and App Store approval.
 		</p>
 		<p class="detail">
 			Includes a custom fine-tuned DistilBERT multi-label classifier served via a Python/FastAPI

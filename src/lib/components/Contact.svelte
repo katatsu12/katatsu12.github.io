@@ -6,7 +6,7 @@
 <footer use:reveal>
 	<h2>Get in touch</h2>
 	<a href="mailto:{email}" class="email">{email}</a>
-	<div class="note">Available for engagements via Active Bridge.</div>
+	<div class="note">Available for new engagements.</div>
 	<div class="social">
 		<a href={github} target="_blank" rel="noopener">GitHub</a>
 		<a href={linkedin} target="_blank" rel="noopener">LinkedIn</a>

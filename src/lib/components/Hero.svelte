@@ -5,13 +5,13 @@
 <header class="hero">
 	<div class="glow"></div>
 	<div class="kicker">
-		Senior Full-Stack Rails Engineer &middot; Ukraine (UTC+2/+3) &middot; EU hours + 4h US
-		Pacific<span class="cursor"></span>
+		Senior Full-Stack Rails Engineer &middot; Ukraine (UTC+2/+3) &middot; EU hours, 4h overlap with
+		US Pacific<span class="cursor"></span>
 	</div>
 	<h1>Den Zubrytskyi</h1>
 	<p class="lede">
-		I ship AI features into production SaaS &mdash; from LLM integration to custom ML models
-		&mdash; backed by 9 years of end-to-end Rails product work.
+		I ship AI features into production SaaS &mdash; from LLM integration to a fine-tuned
+		classifier in production &mdash; backed by 9 years of end-to-end Rails product work.
 	</p>
 	<div class="cta">
 		<a href="#work" class="btn primary">View my work</a>
@@ -33,15 +33,15 @@
 	}
 
 	.glow {
-		position: absolute;
+		position: fixed;
 		inset: -60px -220px 0 -220px;
+		z-index: -1;
 		pointer-events: none;
 		background: radial-gradient(
 			640px 420px at 18% 14%,
 			color-mix(in oklab, var(--accent) 9%, transparent),
 			transparent 70%
 		);
-		animation: glowPulse 9s ease-in-out infinite;
 	}
 
 	.kicker {
