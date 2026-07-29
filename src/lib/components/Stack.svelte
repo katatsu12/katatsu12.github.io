@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<div class="section-label">Stack</div>
+	<h2 class="section-label">Stack</h2>
 	<div class="tags">
 		{#each stack as tag (tag)}
 			<span use:reveal>{tag}</span>

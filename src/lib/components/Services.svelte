@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<div class="section-label">What I do</div>
+	<h2 class="section-label">What I do</h2>
 	<div class="grid">
 		{#each services as service (service.num)}
 			<div class="item" use:reveal>

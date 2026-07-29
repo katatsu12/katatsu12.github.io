@@ -4,16 +4,14 @@
 </script>
 
 <section id="work">
-	<div class="section-label">Flagship project</div>
-	<a
-		href="https://apps.shopify.com/review-copilot"
-		target="_blank"
-		rel="noopener"
-		class="card"
-		use:reveal
-	>
+	<h2 class="section-label">Flagship project</h2>
+	<div class="card" use:reveal>
 		<div class="head">
-			<h2>Review Copilot</h2>
+			<h3>
+				<a href="https://apps.shopify.com/review-copilot" target="_blank" rel="noopener"
+					>Review Copilot</a
+				>
+			</h3>
 			<div class="status">Live on the Shopify App Store &middot; July 2026 &rarr;</div>
 		</div>
 		<p class="summary">
@@ -29,7 +27,7 @@
 				<span>{tag}</span>
 			{/each}
 		</div>
-	</a>
+	</div>
 </section>
 
 <style>
@@ -38,9 +36,7 @@
 	}
 
 	.card {
-		display: block;
-		text-decoration: none;
-		color: inherit;
+		position: relative;
 		border: 1px solid var(--line);
 		border-radius: 10px;
 		padding: clamp(28px, 4vw, 48px);
@@ -51,11 +47,25 @@
 			box-shadow 0.25s ease;
 	}
 
-	.card:hover {
+	.card:hover,
+	.card:focus-within {
 		border-color: var(--accent);
-		color: inherit;
 		transform: translateY(-4px);
 		box-shadow: 0 16px 44px rgba(0, 0, 0, 0.35);
+	}
+
+	h3 a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	/* Stretch the title link over the whole card so the entire surface is
+	   clickable, while the link's accessible name stays just the title. */
+	h3 a::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
 	}
 
 	.head {
@@ -66,7 +76,7 @@
 		justify-content: space-between;
 	}
 
-	h2 {
+	h3 {
 		margin: 0;
 		font-size: clamp(26px, 3.4vw, 36px);
 		font-weight: 700;

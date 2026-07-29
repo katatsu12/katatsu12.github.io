@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<div class="section-label">Selected work</div>
+	<h2 class="section-label">Selected work</h2>
 	<div class="grid">
 		{#each projects as project (project.name)}
 			<div class="card" use:reveal>

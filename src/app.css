@@ -35,13 +35,22 @@ a:hover {
 	background: rgba(45, 212, 191, 0.25);
 }
 
+/* Section headings. Rendered as h2 for document structure, styled down to a
+   small mono label — hence the explicit type reset. */
 .section-label {
 	font-family: var(--font-mono);
 	font-size: 12px;
+	font-weight: 400;
 	letter-spacing: 0.14em;
 	color: var(--faint);
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin: 0 0 20px 0;
+}
+
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
+	border-radius: 2px;
 }
 
 /* Scroll-reveal states applied by the reveal action (src/lib/actions/reveal.js) */

@@ -1,5 +1,8 @@
 export const email = 'den.zubrytskyi@gmail.com';
 
+/** Absolute origin, used for canonical and social-share URLs (which cannot be relative). */
+export const siteUrl = 'https://katatsu12.github.io';
+
 export const github = 'https://github.com/katatsu12';
 export const linkedin = 'https://linkedin.com/in/den-zubrytskyi';
 
