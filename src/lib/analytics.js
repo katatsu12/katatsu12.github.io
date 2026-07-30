@@ -8,4 +8,4 @@
  *
  * Leave empty to disable — no beacon script is emitted at all.
  */
-export const cfBeaconToken = '';
+export const cfBeaconToken = '5039e047241c4b1b945a92c335ada01e';
