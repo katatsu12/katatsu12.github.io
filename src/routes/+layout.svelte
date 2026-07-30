@@ -7,7 +7,7 @@
 	import '@fontsource/jetbrains-mono/500.css';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import { cfBeaconToken } from '$lib/analytics.js';
+	import { cfBeaconToken, umamiWebsiteId } from '$lib/analytics.js';
 
 	let { children } = $props();
 </script>
@@ -19,6 +19,10 @@
 			type="module"
 			src="https://static.cloudflareinsights.com/beacon.min.js"
 			data-cf-beacon={JSON.stringify({ token: cfBeaconToken })}
+		></script>
+	{/if}
+	{#if umamiWebsiteId}
+		<script defer src="https://cloud.umami.is/script.js" data-website-id={umamiWebsiteId}
 		></script>
 	{/if}
 </svelte:head>

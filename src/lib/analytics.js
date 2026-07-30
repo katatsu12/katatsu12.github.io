@@ -9,3 +9,19 @@
  * Leave empty to disable — no beacon script is emitted at all.
  */
 export const cfBeaconToken = '5039e047241c4b1b945a92c335ada01e';
+
+/**
+ * Umami website ID.
+ *
+ * Cloudflare reports "visits" (page views arriving from off-site) but never
+ * unique people — it holds no per-visitor identity at all. Umami fills that
+ * gap: it derives a daily-rotating identifier, so it reports unique visitors
+ * per day without cookies or a consent banner. It also supports the
+ * `data-umami-event` click tracking that Cloudflare has no equivalent for.
+ *
+ * Get it from umami.is → Cloud → add katatsu12.github.io → Website ID. Like
+ * the Cloudflare token it ships in the page HTML, so it is not a secret.
+ *
+ * Leave empty to disable — no script is emitted at all.
+ */
+export const umamiWebsiteId = '';

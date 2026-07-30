@@ -8,8 +8,11 @@
 	<div class="card" use:reveal>
 		<div class="head">
 			<h3>
-				<a href="https://apps.shopify.com/review-copilot" target="_blank" rel="noopener"
-					>Review Copilot</a
+				<a
+					href="https://apps.shopify.com/review-copilot"
+					target="_blank"
+					rel="noopener"
+					data-umami-event="review-copilot-click">Review Copilot</a
 				>
 			</h3>
 			<div class="status">Live on the Shopify App Store &middot; July 2026 &rarr;</div>
