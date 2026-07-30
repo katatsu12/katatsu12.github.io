@@ -15,7 +15,7 @@
 	</p>
 	<div class="cta">
 		<a href="#work" class="btn primary">View my work</a>
-		<a href="mailto:{email}" class="btn ghost" data-umami-event="email-click-hero">Get in touch</a>
+		<a href="mailto:{email}" target="_blank" class="btn ghost" data-umami-event="email-click-hero">Get in touch</a>
 		<div class="social">
 			<a href={github} target="_blank" rel="noopener">GitHub</a>
 			<a href={linkedin} target="_blank" rel="noopener">LinkedIn</a>
