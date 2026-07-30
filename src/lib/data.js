@@ -87,7 +87,7 @@ export const stack = [
 	},
 	{
 		group: 'Infrastructure',
-		items: ['Docker', 'Nginx', 'Capistrano', 'AWS', 'DigitalOcean', 'GitHub Actions']
+		items: ['Docker', 'Nginx', 'Capistrano', 'AWS', 'DigitalOcean', 'Cloudflare', 'GitHub Actions']
 	},
 	{
 		group: 'Integrations',
