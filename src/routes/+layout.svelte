@@ -7,12 +7,20 @@
 	import '@fontsource/jetbrains-mono/500.css';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import { cfBeaconToken } from '$lib/analytics.js';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	{#if cfBeaconToken}
+		<script
+			defer
+			src="https://static.cloudflareinsights.com/beacon.min.js"
+			data-cf-beacon={JSON.stringify({ token: cfBeaconToken })}
+		></script>
+	{/if}
 </svelte:head>
 
 <div class="app">
