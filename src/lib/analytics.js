@@ -24,4 +24,4 @@ export const cfBeaconToken = '5039e047241c4b1b945a92c335ada01e';
  *
  * Leave empty to disable — no script is emitted at all.
  */
-export const umamiWebsiteId = '';
+export const umamiWebsiteId = '83d2697a-838d-4ff3-a2f7-dab9e519ea7b';
