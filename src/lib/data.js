@@ -52,18 +52,28 @@ export const services = [
 ];
 
 export const stack = [
-	'Ruby on Rails',
-	'PostgreSQL',
-	'Sidekiq / Redis',
-	'Hotwire',
-	'TypeScript / Node.js',
-	'React',
-	'Next.js',
-	'Svelte / SvelteKit',
-	'Vue.js',
-	'Python / FastAPI',
-	'LLM APIs (OpenAI, Anthropic)',
-	'Docker',
-	'AWS',
-	'DigitalOcean'
+	{
+		group: 'Backend',
+		items: [
+			'Ruby on Rails',
+			'RSpec',
+			'PostgreSQL',
+			'Sidekiq / Redis',
+			'Python / FastAPI',
+			'Node.js',
+			'Shopify API'
+		]
+	},
+	{
+		group: 'Frontend',
+		items: ['Hotwire', 'TypeScript', 'React', 'Next.js', 'Svelte / SvelteKit', 'Vue.js']
+	},
+	{
+		group: 'AI & ML',
+		items: ['PyTorch', 'Hugging Face', 'DistilBERT', 'LLM APIs (OpenAI, Anthropic)']
+	},
+	{
+		group: 'Infrastructure',
+		items: ['Docker', 'AWS', 'DigitalOcean', 'GitHub Actions']
+	}
 ];
