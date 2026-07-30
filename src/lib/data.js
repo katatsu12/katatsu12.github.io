@@ -56,12 +56,14 @@ export const stack = [
 		group: 'Backend',
 		items: [
 			'Ruby on Rails',
-			'RSpec',
+			'Grape API',
+			'GraphQL',
 			'PostgreSQL',
+			'MySQL',
 			'Sidekiq / Redis',
-			'Python / FastAPI',
+			'WebSockets',
 			'Node.js',
-			'Shopify API'
+			'Python / FastAPI'
 		]
 	},
 	{
@@ -69,11 +71,26 @@ export const stack = [
 		items: ['Hotwire', 'TypeScript', 'React', 'Next.js', 'Svelte / SvelteKit', 'Vue.js']
 	},
 	{
+		group: 'Testing',
+		items: ['RSpec', 'Capybara', 'TDD / BDD']
+	},
+	{
 		group: 'AI & ML',
-		items: ['PyTorch', 'Hugging Face', 'DistilBERT', 'LLM APIs (OpenAI, Anthropic)']
+		items: [
+			'PyTorch',
+			'Hugging Face',
+			'DistilBERT',
+			'Knowledge Distillation',
+			'Prompt Engineering',
+			'LLM APIs (OpenAI, Anthropic)'
+		]
 	},
 	{
 		group: 'Infrastructure',
-		items: ['Docker', 'AWS', 'DigitalOcean', 'GitHub Actions']
+		items: ['Docker', 'Nginx', 'Capistrano', 'AWS', 'DigitalOcean', 'GitHub Actions']
+	},
+	{
+		group: 'Integrations',
+		items: ['Shopify API', 'Stripe', 'Firebase', 'Google Maps API']
 	}
 ];
