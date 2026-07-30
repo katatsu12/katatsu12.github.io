@@ -18,6 +18,8 @@ npm run preview
 
 ## Deployment
 
+Deployed with Github pages available on https://katatsu12.github.io/
+
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages. For a project-page repo the workflow sets `BASE_PATH` to `/<repo-name>` automatically; a user-page repo (`<user>.github.io`) is served from the root and needs no base path.
 
 In the repo settings, set **Pages → Source** to **GitHub Actions** before the first deploy.
