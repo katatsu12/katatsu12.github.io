@@ -56,9 +56,14 @@ export const stack = [
 	'PostgreSQL',
 	'Sidekiq / Redis',
 	'Hotwire',
+	'TypeScript / Node.js',
 	'React',
+	'Next.js',
+	'Svelte / SvelteKit',
+	'Vue.js',
 	'Python / FastAPI',
 	'LLM APIs (OpenAI, Anthropic)',
 	'Docker',
-	'AWS'
+	'AWS',
+	'DigitalOcean'
 ];
